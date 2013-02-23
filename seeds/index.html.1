@@ -1,0 +1,957 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="it-IT" class="y-fp-bg y-fp-pg-grad  bkt709">
+<!-- m2 template 0 -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>Yahoo! Italia</title>
+    <meta name="description" content="Benvenuto su Yahoo!, la homepage più visitata al mondo. Trova rapidamente ciò che cerci, mettiti in contatto con gli amici e tieniti al corrente con le ultime notizie e informazioni.">
+    <meta name="keywords" content="yahoo, yahoo italia, yahoo it, yahoo home page, yahoo mail, yahoo messenger, yahoo finanza">
+
+    <script type="text/javascript">
+        //Roundtrip
+        rtTop = Number(new Date());
+        
+        document.documentElement.className += ' jsenabled';
+    </script>
+    <script type="text/javascript">
+    (function () {
+        //refresh check
+        var d=document,c=";\ "+d.cookie + ";",msc=c.indexOf("; MSC="),re=false,s,r,l="",m,n='0',b,lck='',fps=c.indexOf("FPS="),fpsVal,sw=screen.availWidth,loc=location,qs=loc.search;              
+
+        //reload for lite page if screen resolution < 1024
+        fpsVal = fps === -1 ? 'dl' : d.cookie.substring(fps+2, fps+4);
+        if (fpsVal === 'dl' && sw < 1024) {
+            fpsVal = 'ds';
+            re=true;
+        } else if (fpsVal === 'ds' && sw >=1024) {
+            fpsVal = 'dl';
+            re=true;
+        }
+        d.cookie = "FPS=" + fpsVal + "; expires=Sun, 01 Jan 2012 00:00:00 GMT; domain=it.yahoo.com";        //check cookie for login info
+        if ((b=c.indexOf(' Y=v'))>=0) {
+            c=c.substring(b,c.indexOf(';',b))+'&';
+            if ((b=c.indexOf('l='))>=0) {
+                l=c.substring(b+2,c.indexOf('&',b));
+                if((b=c.indexOf('n='))>=0)n=c.substring(b+2,c.indexOf('&',b));
+            }
+            
+            //if login info isn't the same...
+            if (lck!=l) {
+                re=true;
+            }
+        }      
+        
+        //state change
+        if (msc > -1){
+            re = true;
+            d.cookie="MSC=0; expires=Thu, 01 Jan 1970 00:00:00 GMT; domain=it.yahoo.com";
+        }                
+        //should reload?
+        if (re){
+            s=Math.round(+new Date()/1000);
+            m=/r\d+=(\d+)/.exec(qs);
+
+            //not reloaded recently?
+            if (!m || s-parseInt(m[1],10) >= 20) {
+                r=Math.round(parseInt(n,32)%1021);
+                document.write('<meta http-equiv="Expires" content="-1">');
+                if (qs.indexOf('r'+r+'=' + s)!=1) {
+                    loc.replace('http://'+loc.hostname+(loc.port?":"+loc.port:"")+loc.pathname+(qs.length ? loc.search.replace(/&?r\d+=[^&]+/,'') + '&' : '?') + 'r'+r+'='+s);
+                }
+            }
+        }
+    })();
+</script>
+
+    <script>
+(function(){var k=13,d=4,j=0,a=document.documentElement,b=[a.className],f,c=navigator.plugins,g=k;if(c&&c.length){f=c["Shockwave Flash"];if(f&&f.description){j=parseInt(f.description.match(/\b(\d+)\.\d+\b/)[1],10)||0}}else{while(g--){try{new ActiveXObject("ShockwaveFlash.ShockwaveFlash."+g);j=g;break}catch(h){}}}b.push("flash-"+j);while(j-->d){b.push("flash-gt"+j)}a.className=b.join(" ")})();
+</script>
+    <script>
+(function(){var j=this,n=/^(on)?load/,b=/^on/,i="addEventListener",f="attachEvent",e="_oc",h="detachEvent",g="removeEventListener",l=j[i],m=j[g],p=j[f],a=j[h],k={},d=0;function c(r,s,q){if(!r||!s){return;}if(n.test(r)){if(!s[e]){var t=++d;s[e]=t;k[t]=s;}}else{if(p&&b.test(r)){p(r,s);}else{if(l){l(r,s,q);}}}}function o(r,s,q){if(!r||!s){return;}if(n.test(r)){var t=s[e];if(t){delete k[t];}}else{if(a&&b.test(r)){a(r,s);}else{if(m){m(r,s,q);}}}}j.OnloadCache={enable:function(){if(l){j[i]=c;j[g]=o;}if(p){j[f]=c;j[h]=o;}},disable:function(){if(l){j[i]=l;j[g]=m;}if(p){j[f]=p;j[h]=a;}},dispatch:function(){var r={type:"load"},q;for(q in k){if(k.hasOwnProperty(q)){k[q](r);}}},reset:function(){k={};}};})();
+OnloadCache.enable();
+</script>
+
+    <!-- MapleTop -->
+	
+<link rel="stylesheet" type="text/css" href="http://l.yimg.com/a/combo?arc/yui/reset_2.6.5.css&arc/yui/fonts_2.6.4.css&metro/uiplugins/generic_0.1.9.css&metro/error/error_0.1.16.css&metro/fp/fp_zindex_0.0.29.css&metro/fp/fp_0.1.96.css&metro/uiplugins/tablist_service_0.1.6.css&metro/uiplugins/iframeshim_service_0.0.4.css&metro/uiplugins/menu_service_0.1.3.css&metro/masthead/masthead_0.2.82.css&metro/navbar/navbar_0.1.90.css&metro/navbar/navbar_pageoptions_0.0.29.css&metro/breakingnews/breakingnews_0.0.21.css&metro/marketindices/marketindices_0.1.44.css&metro/miniad/promoads_0.1.7.css&metro/uiplugins/ulm_service_0.1.8.css&metro/uiplugins/ulm_default_0.1.17.css&metro/uiplugins/carousel_service_0.1.9.css&metro/uiplugins/tablist_news_0.0.15.css&metro/news/news_0.1.82.css&metro/specialevents/specialevents_0.0.34.css&metro/sda/sda_0.1.31.css&metro/fptoday/fptoday_0.1.137.css&metro/uiplugins/carousel_default_0.1.13.css&metro/tuc/tuc_outboxlite_common_0.0.15.css&metro/tuc/tuc_outboxlite_embedded_0.0.6.css&metro/contentcarousel/contentcarousel_0.1.89.css&metro/contentcarousel/contentcarousel_topten_0.1.78.css&metro/contentcarousel/pulse_0.1.65.css&metro/contentcarousel/slideshow1_0.1.30.css&metro/contentcarousel/shopping_0.1.24.css&metro/pa/pa_0.1.186.css&metro/pa/pa_detached_0.1.77.css&metro/uiplugins/tooltip_service_1.0.2.css&metro/uiplugins/tooltip_default_0.1.18.css&metro/pa/tooltip_pa_dialog_1.0.6.css&metro/uiplugins/sortable_service_0.1.8.css&metro/uiplugins/sethomepage_service_0.0.3.css&metro/pa/pa_add_0.1.50.css&metro/footer/footer_0.1.61.css&metro/footer/subfooter_0.0.8.css" />
+    <style type="text/css">
+    
+.x-small { font-size: 77%; } 
+.small { font-size: 85%; } 
+.med-small { font-size: 93%; } 
+.medium { font-size: 100%; }
+.med-large { font-size: 108%; } 
+.large { font-size: 116%; } 
+.x-large { font-size: 123.1%; } 
+.x2-large { font-size: 131%; } 
+.x3-large { font-size: 138.5%; } 
+.x5-large { font-size: 153.9%; }
+.x7-large { font-size: 167%; }
+.x9-large { font-size: 182%; }
+.strong { font-weight:bold; }
+
+.hide-offscreen {
+    position: absolute;
+    top: -999em;
+}
+
+.hide-textindent {
+    text-indent: -999em; 
+    display: block; 
+    overflow: hidden; 
+    text-decoration: none;
+}
+
+.y-glbl-mod-grad, .mod-bg-elements-img { background: url(http://d.yimg.com/a/i/ww/met/th/default/gsprite_mod_default_103008.gif) repeat-x; } 
+.y-glbl-universal-grad, .framework-img { background: url(http://d.yimg.com/a/i/ww/met/gsprite_20100302.png) repeat-x; } 
+.y-glbl-mod-controls, .elements-img { background: url(http://d.yimg.com/a/i/ww/met/th/default/sprite_default_20100616_ltr.png) no-repeat; } 
+.y-glbl-ltdrk, .mod-action-icons { background: url(http://d.yimg.com/a/i/ww/met/sprite_ltdrk_080409.gif) no-repeat; } 
+.y-glbl-universal, .util-img { background: url(http://d.yimg.com/a/i/ww/met/sprite_pg_20100616_ltr.png) no-repeat; } 
+.y-glbl-properties { background: url(http://d.yimg.com/a/i/ww/met/sprite_trough_01222009b.gif) no-repeat; } 
+
+.mod .mod-bdr { border:1px solid #93B9D9; }
+.mod .mod-alt-bdr { border:1px solid #E6EFF7; }
+.mod .mod-bgcolor { background:#ffffff; }
+.mod .link-color { color:#16387c; }
+.mod .sub-hd {background:#B1CCE3 url(http://d.yimg.com/a/i/ww/met/th/default/gsprite_mod_default_103008.gif) 0px 0px repeat-x;color:#333;}
+.mod .sub-hd a:link,
+    .mod .sub-hd a:visited,
+    .mod .sub-hd a {color:#333;}
+.mod .alt-bg-color{background:#E6EFF7;}
+.mod a.alt-text-color,
+    .mod .alt-text-color{color:#999999;}
+.mod .reverse-bg-color{background:#16387c;}
+.mod a.text-color,
+    .mod .text-color { color: #333; }
+.mod a.reverse-text-color,
+    .mod .reverse-text-color {color:#ffffff;}
+.mod .divider   {border:1px solid #93B9D9;}
+.mod .divider-l {border-left:1px solid #93B9D9;}
+.mod .divider-r {border-right:1px solid #93B9D9;}
+.mod .divider-t {border-top:1px solid #93B9D9;}
+.mod .divider-b {border-bottom:1px solid #93B9D9;}
+.mod .line-h    {border:1px solid #ADC9E8;}
+.mod .line-h-t  {border-top:1px solid #ADC9E8;}
+.mod .line-h-r  {border-right:1px solid #ADC9E8;}
+.mod .line-h-b  {border-bottom:1px solid #ADC9E8;}
+.mod .line-h-l  {border-left:1px solid #ADC9E8;}
+.mod .line-l    {border:1px solid #93B9D9;}
+.mod .line-l-t  {border-top:1px solid #93B9D9;}
+.mod .line-l-r  {border-right:1px solid #93B9D9;}
+.mod .line-l-b  {border-bottom:1px solid #93B9D9;}
+.mod .line-l-l  {border-left:1px solid #93B9D9;}
+
+.y-bg-1 { background-color: #fff; }
+.y-bg-2 { background-color: #f9fafa; }
+.y-bg-3 { background-color: #eff3f5; }
+.y-bg-4 { background-color: #dbe1e6; }
+.y-bg-5 { background-color: #a1adb9; }
+.y-bg-6 { background-color: #c5ced7; }
+.y-bg-hilite { background-color: #56758e; }
+
+.y-ln-1 { border-color: #dbe1e6; }
+.y-ln-2 { border-color: #c5ced7; }
+.y-ln-3 { border-color: #a1adb9; }
+.y-ln-4 { border-color: #2d4458; }
+.y-ln-5 { border-color: #eff3f5; }
+.y-ln-6 { border-color: #fff; }
+.y-ln-accent { border-color: #731a8b; }
+
+.y-txt-1 { color: #333; }
+.y-txt-2 { color: #6C717A; }
+.y-txt-3 { color: #a1adb9; }
+.y-txt-4 { color: #000; }
+.y-txt-5 { color: #fff; }
+.y-txt-modhdr { color: #333; }
+.y-txt-accent { color: #7d3883; }
+.y-txt-input { color: #999; }
+
+.y-link-1 { color: #16387c; }
+.y-link-2 { color: #333; }
+.y-link-1-visited { color: #5b73a3; }
+.y-link-2-visited { color: #666; }
+
+a { color: #16387c; }
+a:visited { color: #5b73a3; }
+a:visited.y-link-2 { color: #666; }
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.ua-ie .clearfix {
+    zoom: 1;
+}
+
+.loading-spinner { background: url(http://d.yimg.com/a/i/ww/met/anim_loading_sm_082208.gif) left 0 no-repeat; }
+.rtl .loading-spinner { background-position: right 0; }
+.ltr .loading-spinner { background-position: left 0; }
+
+a:hover.goto-link {
+    text-decoration: none;
+}
+
+a:hover.goto-link span.goto {
+    text-decoration: underline;
+}
+
+.goto-link span.property {
+    color: #666;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.goto-link a.property {
+    cursor: pointer;
+}
+
+.ua-ie7 .goto-link span.property {
+    position: relative;
+}
+
+.goto-link span.property img {
+    vertical-align: middle;
+}
+.y-txt-modhdr {
+    background-color: #fff;
+}
+
+.y-fp-pg-grad {
+    background-image: url(http://d.yimg.com/a/i/ww/met/th/slate/gsprite_pg_slate_20100521.png);
+    background-repeat: repeat-x;
+}
+.y-fp-pg-vgrad {
+    background-image: none;
+    background-repeat: repeat-y;
+}
+.y-fp-pg-controls {
+    background-image: url(http://d.yimg.com/a/i/ww/met/th/slate/sprite_pg_slate_20100524_ltr.png);
+    background-repeat: no-repeat;
+}
+.y-fp-pg-controls-nt {
+    background-image: url(http://d.yimg.com/a/i/ww/met/sprite_pg_nontheme_20100616_ltr.png);
+    background-repeat: no-repeat;
+}
+
+.cta-btn,
+.cta-btn:visited {
+    background: #0868a7 url(http://d.yimg.com/a/i/ww/met/gsprite_20100302.png) repeat-x 0 -1204px !important;
+    color: #FFF !important;
+    font-weight: bold;
+    padding:0.2em 1em;
+    border: solid 1px #336699 !important;
+    text-align: center;
+}
+
+.cta-btn-disabled {
+    border:1px Solid #bbbbbb !important;
+    background:#ccc none !important;
+    color:#666 !important;
+    font-weight: bold;
+    padding: 0 .3em;
+    text-align: center;
+}
+
+.cta-btn-ext,
+.cta-btn-ext:visited {
+    background: #fba707 url(http://d.yimg.com/a/i/ww/met/gsprite_20100302.png) repeat-x scroll 0 0;
+    border: 1px solid #dd9714;
+    color: #000;
+    font-weight: bold;
+    padding: 0.08em 0.3em;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cancel-btn {
+    color: #346697 !important;
+    border: none !important;
+    background: none !important;
+    padding: 0 !important;
+    font-weight: none !important;
+}
+
+.ua-ie6 .cta-btn,
+.ua-ie7 .cta-btn,
+.ua-ie6 .cta-btn-disabled,
+.ua-ie7 .cta-btn-disabled,
+.ua-ie6 .cta-btn-ext,
+.ua-ie7 .cta-btn-ext,
+.ua-ie6 .cancel-btn,
+.ua-ie7 .cancel-btn {
+    overflow: visible;
+    zoom:1;
+}
+
+.y-hdr-ln { border-color: #dbe1e6; }
+.y-hdr-txt { color: #6c717a; }
+.y-hdr-link { color: #16387c; }
+
+.y-ftr-bg { background-color: #fff; }
+.y-ftr-ln { border-color: #dbe1e6; }
+.y-ftr-txt { color: #333; }
+.y-ftr-link { color: #16387c; }
+
+.y-ftr-txt-hdr { color: #333; }
+.y-ftr-link-hdr { color: #16387c; }
+
+.y-subftr-txt { color: #6c717a; }
+.y-subftr-link { color: #16387c; }
+
+.y-mast-txt { color: #3e4454; }
+.y-mast-link { color: #16387c; }
+.y-mast-ln-lt { border-color: #fff; }
+.y-mast-ln-dk { border-color: #c1cad2; }
+.y-mast-bg { border-bottom:2px solid #e8edf0; border-left:1px solid #fff; }
+.y-mast-sprite { background: url(http://d.yimg.com/a/i/ww/met/th/slate/spr_masthd_slate_20100628_ltr.png) no-repeat; }
+
+.y-opennews-sprite { background-image: none; }
+
+.y-fp-ln-pg { border-color: #dbe1e6; }
+
+.y-fp-bg { 
+    background-color: #e8edf0;
+    background-position: 0 -2335px;
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+}
+.type_pa .sb .btn-hover a {
+    background-color:#eff3f5;
+    border-color: #dbe1e6;
+}
+
+.type_pa .sb .btn .do-edit:hover .lbl {
+    color: #16387c;
+}
+
+.type_pa .sb .edit {
+    background-color: #a1adb9;
+    border-color: #2d4458;
+}
+
+.type_pa .sb .edit .hd {
+    border-color: #2d4458;
+}
+
+.type_pa .sb .edit .btn {
+    border-color: #a1adb9;
+}
+
+.type_pa .sb .edit .btn a {
+    background-color: #eff3f5;
+}
+
+.type_pa .sb .edit .y-sortable a:hover {
+    background-color: #fff;
+}
+
+.type_pa .sb .edit .y-sortable-false a,
+.type_pa .sb .edit .ft {
+    background-color: #a1adb9;
+}
+
+.type_pa .sb .edit .y-sortable-false span.lbl {
+    color: #333;
+}
+
+    </style>
+    <style id="tmp-css"></style>
+    
+</head>
+
+<body class="yui-skin-sam  bkt709" dir="ltr">
+
+
+    
+	<div id="y-shade">
+	<div id="default-p_30345150" class="mod view_default">  <div id="default-p_30345150-bd" class="bd type_windowshadecontainer type_windowshadecontainer_default">    </div>
+        <div id="default-p_30345150-ft" class="ft"></div>
+</div>
+        </div>            <div id="y-masthead">
+    <div id="default-p_13838465" class="mod view_default">  <div id="default-p_13838465-bd" class="bd type_masthead type_masthead_default"><div class="mh-wrap it clearfix y-fp-pg-grad   lightbg">
+<div class="logo-container " style="height: 50px; width: 202px; "><div id="default-u_14119506" class="mod view_default">  <div id="default-u_14119506-bd" class="bd type_ads type_ads_default"><div class="hdrm hdrm-reserve"><!-- metro normal ad --><!-- metro fallback ad cms --><h1 style="_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://l.yimg.com/a/i/ww/met/yahoo_logo_it_061509.png');">
+    <span class="logo" style="background:transparent url(http://l.yimg.com/a/i/ww/met/yahoo_logo_it_061509.png); 
+_filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);">
+        Yahoo! Italia
+    </span>
+</h1></div>    </div>
+        <div id="default-u_14119506-ft" class="ft"></div>
+</div></div>
+    <form name="sf1" method="get" id="p_13838465-searchform" class="search-form" action="http://it.search.yahoo.com/search">
+        <fieldset>
+             <legend id="aria-legend" class="hide-offscreen">Yahoo! Search</legend>
+            <ul class="stabs large " id="p_13838465-masthead-stabs" aria-labelledby="aria-legend"><li class="small  tab first selected y-mast-sprite"><a class="y-mast-sprite y-mast-txt web" href="http://it.search.yahoo.com/"  data-b="http://www.yahoo.com"><span class="tab-cover y-mast-bg" style="padding-left:0em;padding-right:0em;">Web</span></a></li>
+<li class="small  tab "><a class="y-mast-link images" href="http://it.images.search.yahoo.com/images"  data-b="http://www.yahoo.com"><span class="tab-cover y-mast-bg-hide" style="padding-left:0em;padding-right:0em;">Immagini</span></a></li>
+<li class="small  tab "><a class="y-mast-link video" href="http://it.video.search.yahoo.com/video"  data-b="http://www.yahoo.com"><span class="tab-cover y-mast-bg-hide" style="padding-left:0em;padding-right:0em;">Video</span></a></li>
+<li class="small  tab "><a class="y-mast-link yellowpages" href="http://it.search.yahoo.com/yp"  data-b="http://www.yahoo.com"><span class="tab-cover y-mast-bg-hide" style="padding-left:0em;padding-right:0em;">Pagine Gialle</span></a></li>
+<li class="small  tab "><a class="y-mast-link shopping" href="http://it.shopping.yahoo.com"  data-b="http://www.yahoo.com"><span class="tab-cover y-mast-bg-hide" style="padding-left:0em;padding-right:0em;">Shopping</span></a></li>
+<li class="small lasttab "><a class="y-mast-link more" href="http://it.docs.yahoo.com/servizi-di-ricerca.html" ><span class="tab-cover y-mast-bg-hide" style="padding-left:0em;padding-right:0em;">Altro</span></a></li>
+</ul><div class=" intlswitch x-small" style="left:5.2em;">
+    <input id="p_13838465-r-web" type="radio" data-b="http://www.yahoo.com" name="vc" value="" checked="checked">
+<label for="p_13838465-r-web" class="web y-hdr-txt">Nel web</label>
+<input type="radio" data-b="http://www.yahoo.com" name="vc" value="it" id="p_13838465-r-intl">
+<label for="p_13838465-r-intl" class="y-hdr-txt">Siti in italiano</label>
+
+</div><label for="p_13838465-p" class="search-label hide-offscreen"><span id="p_13838465-aria-label"></span>Ricerca:</label>
+
+<div class="searchwrapper tabpanel selected" id="p_13838465-searchwrapper">
+<div class="searchwrapper-border y-mast-ln-dk">
+<div class="searchwrapper-inner y-mast-sprite y-mast-ln-lt"><input style="" id="p_13838465-p" class="input-query med-large" name="p" type="text" title="Cerca sul web" autocomplete="off"><span class="button-wrapper"><button style=" width: 12em;" class="searchsubmit med-large y-fp-pg-grad" value="Cerca sul web" type="submit" id="search-submit">Cerca sul web</button>
+</span><input type="hidden" value="1"  name="toggle"><input type="hidden" value="mss"  name="cop"><input type="hidden" value="UTF-8"  name="ei"><input type="hidden" value="yfp-t-709" id="p_13838465-frcode" name="fr"><span class="rc-tl y-mast-sprite"></span><span class="rc-tr y-mast-sprite"></span>
+<span class="rc-bl y-mast-sprite"></span>
+<span class="rc-br y-mast-sprite"></span>
+ </div>  <!-- end searchwrapper-inner -->
+
+</div>  <!-- end searchwrapper-border -->
+<span class="ds-r y-mast-sprite"></span><div id="p_13838465-hood" class="hood ds-b">
+    <div id="p_13838465-sa-window" class="sa-window" style="max-height: 11em"></div>
+    <div class="sa-drawer-container y-mast-sprite y-mast-ln-dk">
+    <div class="drawer-innerborder y-mast-ln-lt"></div>
+        <a id="p_13838465-sa-drawer" class="hide-textindent sa-drawer y-mast-sprite hide-completely" href="#suggestions">Apri ricerca assistita</a>
+         <span class="rc-bl y-mast-sprite y-mast-ln-dk"></span><span class="rc-br y-mast-sprite y-mast-ln-dk"></span>
+     </div>
+</div>        </div>  <!--  end searchwrapper  -->
+    </fieldset>
+</form> <!-- end masthead form --></div> <!-- end mh-wrap  -->
+<div class="aria-announce hide-offscreen" role="status" aria-live="polite"></div><script type="text/javascript">
+    (function() {
+        var nodep_13838465 = document.getElementById("p_13838465-p");
+        nodep_13838465.focus();
+    })();
+</script>
+<!-- End of Maple Masthead module-->    </div>
+        <div id="default-p_13838465-ft" class="ft"></div>
+</div>
+            </div>            <div id="y-header" class="clearfix">
+    <div id="default-p_13838466" class="mod view_default">  <div id="default-p_13838466-bd" class="bd type_navbar type_navbar_default"><div class="navbar-wrapper y-fp-ln-pg clearfix">
+<div class="promotions">
+<ul><li class="y-hdr-ln my small first"><a class="y-hdr-link" href="http://it.my.yahoo.com/">Mio Yahoo!</a></li><li id="p_13838466-promotion" class="y-hdr-ln homepage promotion small hp-hidden "><a class="y-hdr-link icon link" id="p_13838466-homepage" href="http://it.yahoo.com/set" http://www.yahoo.com>Fai di Y! la tua home page</a></li></ul>
+</div>
+<div class="help">
+<ul><li class="y-hdr-ln tuc first"><div id="default-p_29445946" class="mod view_default">  <div id="default-p_29445946-bd" class="bd type_tuc type_tuc_default"><ul>        <li class="y-hdr-ln account-sign-in strong first">
+            <a class="y-hdr-link small" href="https://login.yahoo.com/config/login?.src=fpctx&.intl=it&.done=http%3A%2F%2Fit.yahoo.com%2F&.pd=c%3D6T7evjap2e6CwWSb86QVdqk-">Entra</a>
+        </li>        <li class="y-hdr-ln account-sign-up strong">
+            <a class="y-hdr-link small" href="https://edit.yahoo.com/registration?.src=fpctx&.intl=it&.done=http://it.yahoo.com/">
+                <span class="y-hdr-txt">Sei un nuovo utente?</span>
+                Registrati
+            </a>
+        </li>                <li class="y-hdr-ln status su-loggedout">        <div class="short-status-cont"><!--
+        --><span class="ptr y-fp-pg-controls"></span><!--
+        --><a class="y-hdr-txt y-ln-1 small short-status" data-b="http://www.yahoo.com" href="http://pulse.yahoo.com/y" id="p_29445946-su-short-status">Vuoi condividere qualcosa?</a>
+        </div>
+        <div class="su-dropdown su-loggedout hidden" id="p_29445946-su-dropdown">
+    <div class="su-dropdown-outer y-ln-3 y-bg-3">
+                <div class="oops-msg">
+            <span class="icon y-glbl-universal"></span>
+            <h3 class="oops ">Entra per aggiornare il tuo stato.</h3>
+        </div>
+        <p class="oops">
+            <a class="cta-btn " href="https://login.yahoo.com/config/login?.src=fpctx&.intl=it&.done=http%3A%2F%2Fit.yahoo.com%2F&.pd=c%3D6T7evjap2e6CwWSb86QVdqk-">Entra</a>
+            <button class="cancel-btn " id="p_29445946-su-cancel" data-b="http://www.yahoo.com">Annulla</button>
+        </p>
+    </div>
+    <div class="y-fp-pg-controls su-arrow"></div>
+    <a data-b="http://www.yahoo.com" class="y-fp-pg-controls close hide-textindent" id="p_29445946-su-close">Chiudi</a>
+</div></li></ul>    </div>
+        <div id="default-p_29445946-ft" class="ft"></div>
+</div></li><li class="y-hdr-ln pageoptions " data-h="http://www.yahoo.com" id="p_13838466-pageoptions">
+<a href="#" id="p_13838466-pageoptions-link" class="y-ln-3 y-hdr-link pageoptions-link small">Opzioni pagina<span class="y-fp-pg-controls arrow" id="p_13838466-pageoptions-arrow" style="background-position: 0 -995px;"></span></a>
+</li></ul>
+</div>
+</div>    </div>
+        <div id="default-p_13838466-ft" class="ft"></div>
+</div>
+            </div>
+            <div id="y-content" class="clearfix y-ln-accent">
+
+                <div id="y-cols" class="clearfix y-fp-ln-pg">
+
+                    <div id="y-pa">
+<div class="fp-fx"><div id="default-u_30345382" class="mod view_default">  <div id="default-u_30345382-bd" class="bd type_pahowto type_pahowto_default">    </div>
+        <div id="default-u_30345382-ft" class="ft"></div>
+</div></div><div id="default-u_2588582" class="mod view_default">  <div id="default-u_2588582-bd" class="bd type_pa type_pa_default">        <div id="u_2588582-ctr" class="ctr ">
+            <div id="u_2588582-sb" class="sb">
+                
+                            <div id="u_2588582-y" class="y y-ln-1">
+                <div class="hd y-ln-1 y-fp-pg-grad clearfix">
+                    <h2 class="med-small y-txt-1 title">Siti Yahoo!</h2>
+                    <h2 class="med-small y-txt-5 alt-title">Riordina o rimuovi</h2>
+                    <button class="do-edit small y-link-1 y-fp-pg-controls" data-b="http://www.yahoo.com">Modifica<span class="hide-offscreen"> Siti Yahoo!</span></button>
+                    <button class="do-close hide-offscreen">Ho finito</button>
+                </div>
+                <div class="bd"><ol><li id="pa-u_14782488-bd" modid="u_14782488" class="btn btn-app y-fp-pg-controls y-sortable-false btn-first" data-b-paq="http://www.yahoo.com" data-b-pad="http://www.yahoo.com"   ><a href="http://mail.yahoo.com?.intl=it"><span class="icn" style="background: url(http://d.yimg.com/a/i/ww/met/pa_icons_18/20100625/spr_apps_it.gif) no-repeat 0px 0px;"></span><span class="lbl med-small y-txt-1">Mail</span> <span class="vital small" aria-labelledby="pa-u_14782488-lbl"></span></a><button class="do-rm y-sortable-false y-fp-pg-controls hide-textindent" data-b="http://www.yahoo.com">Rimuovi Mail</button> <button class="do-open y-fp-pg-controls hide-textindent" http://www.yahoo.com>Anteprima Mail</button></li><li id="pa-u_25021325-bd" modid="u_25021325" class="btn btn-app y-fp-pg-controls" data-b-paq="http://www.yahoo.com" data-b-pad="http://www.yahoo.com"   ><a href="http://it.answers.yahoo.com/"><span class="icn" style="background: url(http://d.yimg.com/a/i/ww/met/pa_icons_18/20100625/spr_apps_it.gif) no-repeat 0 -68px;"></span><span class="lbl med-small y-txt-1">Answers</span> <span class="vital small" aria-labelledby="pa-u_25021325-lbl"></span></a><button class="do-rm y-sortable-false y-fp-pg-controls hide-textindent" data-b="http://www.yahoo.com">Rimuovi Answers</button> <button class="do-open y-fp-pg-controls hide-textindent" http://www.yahoo.com>Anteprima Answers</button></li><li id="pa-u_21445696-bd" modid="u_21445696" class="btn btn-app y-fp-pg-controls" data-b-paq="http://www.yahoo.com" data-b-pad="http://www.yahoo.com"   ><a href="http://profiles.yahoo.com/updates/"><span class="icn" style="background: url(http://d.yimg.com/a/i/ww/met/pa_icons_18/update_20100602.gif) no-repeat 0 0;"></span><span class="lbl med-small y-txt-1">Attività</span> <span class="vital small" aria-labelledby="pa-u_21445696-lbl"></span></a><button class="do-rm y-sortable-false y-fp-pg-controls hide-textindent" data-b="http://www.yahoo.com">Rimuovi Attività</button> <button class="do-open y-fp-pg-controls hide-textindent" http://www.yahoo.com>Anteprima Attività</button></li><li id="pa-u_25021272-bd" modid="u_25021272" class="btn btn-app y-fp-pg-controls" data-b-paq="http://www.yahoo.com" data-b-pad="http://www.yahoo.com"   ><a href="http://it.cars.yahoo.com/"><span class="icn" style="background: url(http://d.yimg.com/a/i/ww/met/pa_icons_18/20100625/spr_apps_it.gif) no-repeat 0 -204px;"></span><span class="lbl med-small y-txt-1">Auto</span> <span class="vital small" aria-labelledby="pa-u_25021272-lbl"></span></a><button class="do-rm y-sortable-false y-fp-pg-controls hide-textindent" data-b="http://www.yahoo.com">Rimuovi Auto</button> <button class="do-open y-fp-pg-controls hide-textindent" http://www.yahoo.com>Anteprima Auto</button></li><li id="pa-u_63826-bd" modid="u_63826" class="btn btn-app y-fp-pg-controls" data-b-paq="http://www.yahoo.com" data-b-pad="http://www.yahoo.com"   ><a href="http://it.movies.yahoo.com/"><span class="icn" style="background: url(http://d.yimg.com/a/i/ww/met/pa_icons_18/20100625/spr_apps_it.gif) no-repeat 0 -272px;"></span><span class="lbl med-small y-txt-1">Cinema</span> <span class="vital small" aria-labelledby="pa-u_63826-lbl"></span></a><button class="do-rm y-sortable-false y-fp-pg-controls hide-textindent" data-b="http://www.yahoo.com">Rimuovi Cinema</button> <button class="do-open y-fp-pg-controls hide-textindent" http://www.yahoo.com>Anteprima Cinema</button></li><li id="pa-u_93109-bd" modid="u_93109" class="btn btn-app y-fp-pg-controls" data-b-paq="http://www.yahoo.com" data-b-pad="http://www.yahoo.com"   ><a href="http://it.finance.yahoo.com/"><span class="icn" style="background: url(http://d.yimg.com/a/i/ww/met/pa_icons_18/20100625/spr_apps_it.gif) no-repeat 0 -340px;"></span><span class="lbl med-small y-txt-1">Finanza</span> <span class="vital small" aria-labelledby="pa-u_93109-lbl"></span></a><button class="do-rm y-sortable-false y-fp-pg-controls hide-textindent" data-b="http://www.yahoo.com">Rimuovi Finanza</button> <button class="do-open y-fp-pg-controls hide-textindent" http://www.yahoo.com>Anteprima Finanza</button></li><li id="pa-u_14682031-bd" modid="u_14682031" class="btn btn-app y-fp-pg-controls" data-b-paq="http://www.yahoo.com" data-b-pad="http://www.yahoo.com"   ><a href="http://www.flickr.com/"><span class="icn" style="background: url(http://d.yimg.com/a/i/ww/met/pa_icons_18/20100625/spr_apps_it.gif) no-repeat 0 -408px;"></span><span class="lbl med-small y-txt-1">Flickr</span> <span class="vital small" aria-labelledby="pa-u_14682031-lbl"></span></a><button class="do-rm y-sortable-false y-fp-pg-controls hide-textindent" data-b="http://www.yahoo.com">Rimuovi Flickr</button> <button class="do-open y-fp-pg-controls hide-textindent" http://www.yahoo.com>Anteprima Flickr</button></li><li id="pa-u_25021266-bd" modid="u_25021266" class="btn btn-link y-fp-pg-controls" data-b-paq="http://www.yahoo.com" data-b-pad="http://www.yahoo.com"   ><a href="http://it.games.yahoo.com/"><span class="icn" style="background: url(http://d.yimg.com/a/i/ww/met/pa_icons_18/20100625/spr_apps_it.gif) no-repeat 0 -476px;"></span><span class="lbl med-small y-txt-1">Giochi</span> </a><button class="do-rm y-sortable-false y-fp-pg-controls hide-textindent" data-b="http://www.yahoo.com">Rimuovi Giochi</button></li><li id="pa-u_25021296-bd" modid="u_25021296" class="btn btn-app y-fp-pg-controls" data-b-paq="http://www.yahoo.com" data-b-pad="http://www.yahoo.com"   ><a href="http://it.meetic.yahoo.net/index.php?mtcmk=049801"><span class="icn" style="background: url(http://d.yimg.com/a/i/ww/met/pa_icons_18/20100625/spr_apps_it.gif) no-repeat 0 -544px;"></span><span class="lbl med-small y-txt-1">Incontri</span> <span class="vital small" aria-labelledby="pa-u_25021296-lbl"></span></a><button class="do-rm y-sortable-false y-fp-pg-controls hide-textindent" data-b="http://www.yahoo.com">Rimuovi Incontri</button> <button class="do-open y-fp-pg-controls hide-textindent" http://www.yahoo.com>Anteprima Incontri</button></li><li id="pa-u_25967225-bd" modid="u_25967225" class="btn btn-app y-fp-pg-controls" data-b-paq="http://www.yahoo.com" data-b-pad="http://www.yahoo.com"   ><a href="http://www.kelkoo.it/c-601-home-page.html?partnerId=96922897"><span class="icn" style="background: url(http://d.yimg.com/a/i/ww/met/pa_icons_18/20100625/spr_apps_it.gif) no-repeat 0 -612px;"></span><span class="lbl med-small y-txt-1">Kelkoo</span> <span class="vital small" aria-labelledby="pa-u_25967225-lbl"></span></a><button class="do-rm y-sortable-false y-fp-pg-controls hide-textindent" data-b="http://www.yahoo.com">Rimuovi Kelkoo</button> <button class="do-open y-fp-pg-controls hide-textindent" http://www.yahoo.com>Anteprima Kelkoo</button></li><li id="pa-u_8298348-bd" modid="u_8298348" class="btn btn-app y-fp-pg-controls" data-b-paq="http://www.yahoo.com" data-b-pad="http://www.yahoo.com"   ><a href="http://it.messenger.yahoo.com/"><span class="icn" style="background: url(http://d.yimg.com/a/i/ww/met/pa_icons_18/20100625/spr_apps_it.gif) no-repeat 0 -680px;"></span><span class="lbl med-small y-txt-1">Messenger</span> <span class="vital small" aria-labelledby="pa-u_8298348-lbl"></span></a><button class="do-rm y-sortable-false y-fp-pg-controls hide-textindent" data-b="http://www.yahoo.com">Rimuovi Messenger</button> <button class="do-open y-fp-pg-controls hide-textindent" http://www.yahoo.com>Anteprima Messenger</button></li><li id="pa-u_63794-bd" modid="u_63794" class="btn btn-app y-fp-pg-controls" data-b-paq="http://www.yahoo.com" data-b-pad="http://www.yahoo.com"   ><a href="http://it.weather.yahoo.com/"><span class="icn" style="background: url(http://d.yimg.com/a/i/ww/met/pa_icons_18/20100625/spr_apps_it.gif) no-repeat 0 -748px;"></span><span class="lbl med-small y-txt-1">Meteo</span> <span class="vital small" aria-labelledby="pa-u_63794-lbl"></span></a><button class="do-rm y-sortable-false y-fp-pg-controls hide-textindent" data-b="http://www.yahoo.com">Rimuovi Meteo</button> <button class="do-open y-fp-pg-controls hide-textindent" http://www.yahoo.com>Anteprima Meteo</button></li><li id="pa-u_25021265-bd" modid="u_25021265" class="btn btn-link y-fp-pg-controls" data-b-paq="http://www.yahoo.com" data-b-pad="http://www.yahoo.com"   ><a href="http://it.my.yahoo.com/"><span class="icn" style="background: url(http://d.yimg.com/a/i/ww/met/pa_icons_18/myyahoo_20100602.gif) no-repeat 0 0;"></span><span class="lbl med-small y-txt-1">Mio Yahoo!</span> </a><button class="do-rm y-sortable-false y-fp-pg-controls hide-textindent" data-b="http://www.yahoo.com">Rimuovi Mio Yahoo!</button></li><li id="pa-u_25021311-bd" modid="u_25021311" class="btn btn-app y-fp-pg-controls" data-b-paq="http://www.yahoo.com" data-b-pad="http://www.yahoo.com"   ><a href="http://it.music.yahoo.com/"><span class="icn" style="background: url(http://d.yimg.com/a/i/ww/met/pa_icons_18/20100625/spr_apps_it.gif) no-repeat 0 -816px;"></span><span class="lbl med-small y-txt-1">Musica</span> <span class="vital small" aria-labelledby="pa-u_25021311-lbl"></span></a><button class="do-rm y-sortable-false y-fp-pg-controls hide-textindent" data-b="http://www.yahoo.com">Rimuovi Musica</button> <button class="do-open y-fp-pg-controls hide-textindent" http://www.yahoo.com>Anteprima Musica</button></li><li id="pa-u_63802-bd" modid="u_63802" class="btn btn-app y-fp-pg-controls" data-b-paq="http://www.yahoo.com" data-b-pad="http://www.yahoo.com"   ><a href="http://it.horoscope.yahoo.com/"><span class="icn" style="background: url(http://d.yimg.com/a/i/ww/met/pa_icons_18/horo_20100602.gif) no-repeat 0 0;"></span><span class="lbl med-small y-txt-1">Oroscopo</span> <span class="vital small" aria-labelledby="pa-u_63802-lbl"></span></a><button class="do-rm y-sortable-false y-fp-pg-controls hide-textindent" data-b="http://www.yahoo.com">Rimuovi Oroscopo</button> <button class="do-open y-fp-pg-controls hide-textindent" http://www.yahoo.com>Anteprima Oroscopo</button></li><li id="pa-u_17986569-bd" modid="u_17986569" class="btn btn-app y-fp-pg-controls" data-b-paq="http://www.yahoo.com" data-b-pad="http://www.yahoo.com"   ><a href="http://it.eurosport.yahoo.com/"><span class="icn" style="background: url(http://d.yimg.com/a/i/ww/met/pa_icons_18/20100625/spr_apps_it.gif) no-repeat 0 -884px;"></span><span class="lbl med-small y-txt-1">Sport</span> <span class="vital small" aria-labelledby="pa-u_17986569-lbl"></span></a><button class="do-rm y-sortable-false y-fp-pg-controls hide-textindent" data-b="http://www.yahoo.com">Rimuovi Sport</button> <button class="do-open y-fp-pg-controls hide-textindent" http://www.yahoo.com>Anteprima Sport</button></li><li id="pa-u_25967726-bd" modid="u_25967726" class="btn btn-link y-fp-pg-controls" data-b-paq="http://www.yahoo.com" data-b-pad="http://www.yahoo.com"   ><a href="http://it.babelfish.yahoo.com/"><span class="icn" style="background: url(http://d.yimg.com/a/i/ww/met/pa_icons_18/babel_20100602.gif) no-repeat 0 0;"></span><span class="lbl med-small y-txt-1">Traduttore</span> </a><button class="do-rm y-sortable-false y-fp-pg-controls hide-textindent" data-b="http://www.yahoo.com">Rimuovi Traduttore</button></li><li id="pa-u_25021267-bd" modid="u_25021267" class="btn btn-app y-fp-pg-controls" data-b-paq="http://www.yahoo.com" data-b-pad="http://www.yahoo.com"   ><a href="http://it.viaggi.yahoo.com/"><span class="icn" style="background: url(http://d.yimg.com/a/i/ww/met/pa_icons_18/20100625/spr_apps_it.gif) no-repeat 0 -952px;"></span><span class="lbl med-small y-txt-1">Viaggi</span> <span class="vital small" aria-labelledby="pa-u_25021267-lbl"></span></a><button class="do-rm y-sortable-false y-fp-pg-controls hide-textindent" data-b="http://www.yahoo.com">Rimuovi Viaggi</button> <button class="do-open y-fp-pg-controls hide-textindent" http://www.yahoo.com>Anteprima Viaggi</button></li></ol><button class="do-close hide-offscreen">Ho finito</button></div>
+                <div class="ft y-fp-pg-controls clearfix"><a href="http://it.yahoo.com/more.html" class="small y-link">Altri siti Yahoo!</a></div>
+            </div>
+                            <div id="u_2588582-u" class="u y-ln-1">
+                <div class="hd y-ln-1 y-fp-pg-grad clearfix">
+                    <h2 class="med-small y-txt-1 title">PREFERITI</h2>
+                    <h2 class="med-small y-txt-5 alt-title">Riordina o rimuovi</h2>
+                    <button class="do-edit small y-link-1 y-fp-pg-controls" data-b="http://www.yahoo.com">Modifica<span class="hide-offscreen"> PREFERITI</span></button>
+                    <button class="do-close hide-offscreen">Ho finito</button>
+                </div>
+                <div class="bd"><ol><li id="pa-u_22927225-bd" modid="u_22927225" class="btn btn-app y-fp-pg-controls btn-first" data-b-paq="http://www.yahoo.com" data-b-pad="http://www.yahoo.com"   ><a href="http://www.facebook.com"><span class="icn" style="background: url(http://d.yimg.com/a/i/ww/met/pa_icons_18/face_20100602.gif) no-repeat 0 0;"></span><span class="lbl med-small y-txt-1">Facebook</span> <span class="vital small" aria-labelledby="pa-u_22927225-lbl"></span></a><button class="do-rm y-sortable-false y-fp-pg-controls hide-textindent" data-b="http://www.yahoo.com">Rimuovi Facebook</button> <button class="do-open y-fp-pg-controls hide-textindent" http://www.yahoo.com>Anteprima Facebook</button></li><li id="pa-u_30344680-bd" modid="u_30344680" class="btn btn-app y-fp-pg-controls" data-b-paq="http://www.yahoo.com" data-b-pad="http://www.yahoo.com"   ><a href="http://www.ilsole24ore.com/"><span class="icn" style="background: url(http://d.yimg.com/a/i/ww/met/pa_icons_18/24ore_20100602.gif) no-repeat 0 0;"></span><span class="lbl med-small y-txt-1">Il Sole 24 ORE</span> <span class="vital small" aria-labelledby="pa-u_30344680-lbl"></span></a><button class="do-rm y-sortable-false y-fp-pg-controls hide-textindent" data-b="http://www.yahoo.com">Rimuovi Il Sole 24 ORE</button> <button class="do-open y-fp-pg-controls hide-textindent" http://www.yahoo.com>Anteprima Il Sole 24 ORE</button></li><li id="pa-u_30344922-bd" modid="u_30344922" class="btn btn-app y-fp-pg-controls" data-b-paq="http://www.yahoo.com" data-b-pad="http://www.yahoo.com"   ><a href="http://www.repubblica.it/"><span class="icn" style="background: url(http://d.yimg.com/a/i/ww/met/pa_icons_18/republica_20100602.gif) no-repeat 0 0;"></span><span class="lbl med-small y-txt-1">Repubblica.it</span> <span class="vital small" aria-labelledby="pa-u_30344922-lbl"></span></a><button class="do-rm y-sortable-false y-fp-pg-controls hide-textindent" data-b="http://www.yahoo.com">Rimuovi Repubblica.it</button> <button class="do-open y-fp-pg-controls hide-textindent" http://www.yahoo.com>Anteprima Repubblica.it</button></li><li class="y-sortable-false y-fp-pg-controls btn"><a href="javascript:void(0);" class="do-edit" data-b="http://www.yahoo.com"><span class="icn y-fp-pg-controls"></span><span class="lbl med-small y-txt-3">Aggiungi preferito</span></a></li></ol><button class="do-close hide-offscreen">Ho finito</button></div>
+            </div>
+                                    <div id="u_2588582-p" class="p y-ln-1">
+                        <div class="hd y-ln-1 y-bg-2">
+                            <h3 class="x-small y-txt-3" id="u_2588582-p-lbl">Partner in primo piano</h3>
+                        </div>
+                        <div id="u_2588582-p-bd" class="bd">
+                            <ol><li id="pa-u_16726958-bd" modid="u_16726958" class="btn btn-link y-fp-pg-controls btn-first" defer="1"></li></ol>
+                        </div>
+                    </div>
+            </div>
+                    <div class="pa-accessibility hide-offscreen">
+            <div id="u_2588582-accessibility-status" class="pa-accessibility-status" role="status" aria-live="assertive"></div>
+        </div>
+                    <div id="u_2588582-error-popup" class="hide">
+            <div id="u_2588582-mod-ovrly" class="pa-mod-ovrly"></div>
+            <div id="u_2588582-mod-err-ctr" class="y-glbl-universal-grad pa-mod-err-ctr" role="alertdialog"></div>
+        </div>
+            <div class="pa-app" id="u_2588582-app">
+    <div class="pa-app-hd y-bg-3 y-ln-3 y-fp-pg-grad">
+        <button class="do-app-close y-fp-pg-controls-nt hide-textindent" data-b="http://www.yahoo.com">Chiudi</button>
+    </div>
+    <div class="pa-app-bd y-bg-3 y-ln-3">
+        <div id="u_2588582-mod" class="pa-app-mod"></div>
+        <div id="u_2588582-module-loading-msg" class="y-ln-2 pa-module-loading-msg"></div>
+    </div>    
+    <button class="hide-offscreen" data-b="http://www.yahoo.com">Chiudi</button>
+    <div class="pa-app-cort"></div>
+    <div class="pa-app-corb"></div>
+</div>
+        </div>    </div>
+        <div id="default-u_2588582-ft" class="ft"></div>
+</div>
+                    </div>
+
+                    <div id="y-col1" class="fp-fx">
+<div id="default-p_26391799" class="mod view_default">  <div id="default-p_26391799-bd" class="bd type_breakingnews type_breakingnews_default"><div class="remove-margin"></div><!-- End of breaking news Markup -->    </div>
+        <div id="default-p_26391799-ft" class="ft"></div>
+</div><div id="default-p_13872472" class="mod view_default">  <div id="default-p_13872472-bd" class="bd type_fptoday type_fptoday_default"><script>document.cookie="FPCK2=AgBMVBsQAHQhEAA7jhAAfMsQAHzn;domain=it.yahoo.com;expires=Mon, 30 Aug 2010 12:49:10 GMT";</script>            <div class="fptoday-container y-ln-1   ">
+                <div id="p_13872472-main_story" class="main-story has-date">                        <h2 class="title-date "><span class="title y-txt-modhdr medium" style="font-family: inherit;">OGGI</span><span class="date y-txt-2 medium" style="font-family: inherit;"> - 31 luglio 2010</span></h2>                    <div class="main-story-content y-bg-1" >
+    <h2 class="package-header ">
+                            <a class="pack-title" href="http://it.movies.yahoo.com/blog/gossip/article/7743/che-passo-falso-il-vestito-rosso-di-jessica-biel.html"><img id="p_13872472-header-image" class="" src="http://l.yimg.com/i/i/it/hp/jessi32.jpg" alt="Jessica Biel (Kika)"></a>
+    </h2>
+    <h3 class="">
+                        <a class="x3-large" href="http://it.movies.yahoo.com/blog/gossip/article/7743/che-passo-falso-il-vestito-rosso-di-jessica-biel.html" style="font-family: inherit;">Quel vestito troppo trasparente...</a>
+    </h3>
+    <div class="left-body  medium">
+        <p class="y-txt-1 y-ln-1" style="line-height:1.231">
+            Passo falso di Jessica Biel che ha sfoggiato un abito rosso con un intimo davvero poco elegante.
+                        <a  href="http://it.movies.yahoo.com/blog/gossip/article/7743/che-passo-falso-il-vestito-rosso-di-jessica-biel.html" class="small y-fp-pg-controls right-angle-quote" style="font-family: inherit;">
+                Le foto
+            </a>
+            
+        </p>
+    </div>
+    <h4 class="hide-offscreen">Link correlati</h4>
+    <ul class="related-links  ">
+                                <li class="related-story y-fp-pg-controls bullet">
+                        <a class="small" href="http://it.movies.yahoo.com/blog/gossip/article/7623/cameron-diaz-sciocca-i-telespettatori-britannici.html">Che volgarità Cameron!</a></li>                        <li class="related-story y-fp-pg-controls bullet">
+                        <a class="small" href="http://it.movies.yahoo.com/29072010/15/carla-bruni-35-ciak-per-scena-3.html">35 ciak per Carla Bruni</a></li>                        <li class="related-story y-fp-pg-controls-nt slideshow">
+                        <a class="small" href="http://it.movies.yahoo.com/foto/">Scheletrica Jolie</a></li>
+    </ul>
+</div>                </div>                <div class="footer-section">
+    <div class="footer-overlay hide"></div>
+    <h3 class="hide-offscreen">Altre storie</h3>
+    <div id=p_13872472_carousel_container class="carousel-container small">
+        <div class="y-carousel">
+            <ol class="y-carousel-list y-fp-pg-grad">
+                            <li id="p_13872472-panel0" class="y-panel clearfix ">                    <a y-pkgId="id-5527" data-b-tdh="http://www.yahoo.com"  class=" y-fp-pg-grad y-ln-4 item selected" href="http://it.movies.yahoo.com/blog/gossip/article/7743/che-passo-falso-il-vestito-rosso-di-jessica-biel.html" >
+                        <span class="y-fp-pg-controls indicator"></span>
+                        <img class=" image y-ln-4 y-bg-1" src="http://l.yimg.com/i/i/it/hp/jessi33.jpg" alt="Jessica Biel (Kika)">
+                        
+                        <span class="medium item-label" style="font-family: inherit;line-height:inherit;">Quell&#39;abito trasparente...</span>
+                    </a>                    <a y-pkgId="id-5538" data-b-tdh="http://www.yahoo.com"  class=" y-fp-pg-grad trans-border item" href="http://it.eurosport.yahoo.com/30072010/45/curiosport-fallo-rigore-assurdo-sempre.html" >
+                        <span class="y-fp-pg-controls indicator"></span>
+                        <img class=" image y-ln-2 y-bg-1" src="http://l.yimg.com/i/i/it/hp/rigor16.jpg" alt="Rigore (foto Eurosport)">
+                        <span class="video-icon video-sprite"></span>
+                        <span class="medium item-label" style="font-family: inherit;line-height:inherit;">Mai visto un fallo di mano così</span>
+                    </a>                    <a y-pkgId="id-5516" data-b-tdh="http://www.yahoo.com"  class=" y-fp-pg-grad trans-border item" href="http://it.finance.yahoo.com/notizie/caldo-per-combattere-l-afa-non-serve-il-condizionatore-intrage-94a5b077d107.html?x=0" >
+                        <span class="y-fp-pg-controls indicator"></span>
+                        <img class=" image y-ln-2 y-bg-1" src="http://l.yimg.com/i/i/it/hp/condi3.jpg" alt="Condizionatore (foto Getty)">
+                        
+                        <span class="medium item-label" style="font-family: inherit;line-height:inherit;">Una formula contro l&#39;afa</span>
+                    </a>                    <a y-pkgId="id-5539" data-b-tdh="http://www.yahoo.com"  class=" y-fp-pg-grad trans-border item" href="http://it.tv.yahoo.com/blog/televisione/article/8134/brandon-e-dylan-di-nuovo-insieme-ma-non-davanti-alla-telecamera.html" >
+                        <span class="y-fp-pg-controls indicator"></span>
+                        <img class=" image y-ln-2 y-bg-1" src="http://l.yimg.com/i/i/it/hp/bever3.jpg" alt="Il cast di Beverly Hills 90210 (Getty)">
+                        
+                        <span class="medium item-label" style="font-family: inherit;line-height:inherit;">Che fine hanno fatto?</span>
+                    </a>            </li>            <li id="p_13872472-panel1" class="y-panel clearfix empty hide ">                <span class="y-fp-pg-grad empty trans-border item"></span>                <span class="y-fp-pg-grad empty trans-border item"></span>                <span class="y-fp-pg-grad empty trans-border item"></span>                <span class="y-fp-pg-grad empty trans-border item"></span>            </li>            <li id="p_13872472-panel2" class="y-panel clearfix empty hide ">                <span class="y-fp-pg-grad empty trans-border item"></span>                <span class="y-fp-pg-grad empty trans-border item"></span>                <span class="y-fp-pg-grad empty trans-border item"></span>                <span class="y-fp-pg-grad empty trans-border item"></span>            </li>            <li id="p_13872472-panel3" class="y-panel clearfix empty hide ">                <span class="y-fp-pg-grad empty trans-border item"></span>                <span class="y-fp-pg-grad empty trans-border item"></span>                <span class="y-fp-pg-grad empty trans-border item"></span>                <span class="y-fp-pg-grad empty trans-border item"></span>            </li>            <li id="p_13872472-panel4" class="y-panel clearfix empty hide ">                <span class="y-fp-pg-grad empty trans-border item"></span>                <span class="y-fp-pg-grad empty trans-border item"></span>                <span class="y-fp-pg-grad empty trans-border item"></span>                <span class="y-fp-pg-grad empty trans-border item"></span>            </li>
+            </ol>
+        </div>
+    </div>
+    <div class="navigation no-visibility">
+                <div class="y-nav y-bg-2 y-ln-1 clearfix">            <div class="y-nav-count y-txt-2 small">1 di 20</div>            <div class="y-nav-buttons">
+                <a class="prev" href="#" data-b="http://www.yahoo.com">
+                    <span class="y-fp-pg-grad y-ln-1 btn">
+                        <span class="y-fp-pg-controls hide-textindent">Precedente gruppo di storie</span>
+                    </span>
+                </a>
+                <a class="next" href="#" data-b="http://www.yahoo.com">
+                    <span class="y-fp-pg-grad y-ln-1 btn">
+                        <span class="y-fp-pg-controls hide-textindent">Prossimo gruppo di storie</span>
+                    </span>
+                </a>
+            </div>        </div>
+    </div>
+</div>
+
+
+            </div>    </div>
+        <div id="default-p_13872472-ft" class="ft"></div>
+</div><div id="ad-west"></div><div id="default-p_13923988" class="mod view_default">  <div id="default-p_13923988-bd" class="bd type_news type_news_default"> <h2 class="hide-offscreen">Notizie</h2>
+ <div class="tabwrapper y-ln-1" style="min-height:21.2em;">
+    <div class="y-bg-2 y-ln-1 tab-container ">
+   <div class="tab-holder">
+    <ul id="p_13923988-tablist-id" class="y-tablist y-tl-news small clearfix intl-it">
+       <li class="selected"> <a data-b="http://www.yahoo.com" href="http://it.notizie.yahoo.com/" class=" y-ln-1 y-bg-2  first">NOTIZIE</a></li>  <li> <a data-b="http://www.yahoo.com" href="http://it.eurosport.yahoo.com/" class=" y-ln-1 y-bg-2 ">SPORT</a></li>  <li> <a data-b="http://www.yahoo.com" href="http://it.finance.yahoo.com/" class=" y-ln-1 y-bg-2 ">ECONOMIA</a></li>  <li> <a data-b="http://www.yahoo.com" href="http://it.notizie.yahoo.com/gossip.html" class=" y-ln-1 y-bg-2 ">GOSSIP</a></li>
+    </ul>
+   </div>
+   <div class="y-fp-pg-grad y-ln-1 move-icon-container"><a target="_top" href="http://it.yahoo.com/newsswap?_crumb=&pos=1&_done=http://it.yahoo.com/"  title="Sposta le notizie in alto"><span class="y-fp-pg-controls hide-textindent move-icon icon-up">Sposta le notizie in alto</span></a></div>
+  </div>
+  <div class="y-tabpanels">
+   <div class="tabpanel clearfix selected"><ul class="stories medium clearfix"><li><a class="y-fp-pg-controls bullet y-link-1" href="http://it.notizie.yahoo.com/10/20100731/tts-p3-napolitano-a-csm-trame-inquinanti-97cd5f9.html">P3: Napolitano a Csm, trame inquinanti turbano e allarmano</a></li><li><a class="y-fp-pg-controls bullet y-link-1" href="http://it.notizie.yahoo.com/10/20100731/tts-traumi-sportivi-300-000-infortuni-al-97cd5f9.html">Traumi sportivi: 300.000 infortuni all&#39;anno, calcio al top</a></li><li><a class="y-fp-pg-controls bullet y-link-1" href="http://it.notizie.yahoo.com/10/20100731/tts-maltempo-in-pakistan-centinaia-le-vi-97cd5f9.html">Maltempo in Pakistan, centinaia le vittime</a></li><li><a class="y-fp-pg-controls bullet y-link-1" href="http://it.notizie.yahoo.com/10/20100731/tts-a-caccia-di-alghe-in-antartide-premi-97cd5f9.html">A caccia di alghe in Antartide, premiato un italiano</a></li><li><a class="y-fp-pg-controls bullet y-link-1" href="http://it.notizie.yahoo.com/10/20100731/tts-maltempo-12-persone-evacuate-nel-sal-97cd5f9.html">Maltempo: 12 persone evacuate nel Salernitano</a></li><li><a class="y-fp-pg-controls bullet y-link-1" href="http://it.notizie.yahoo.com/10/20100731/tts-fini-berlusconi-ora-lo-scontro-e-sul-97cd5f9.html">Fini-Berlusconi, ora lo scontro e&#39; sul governo</a></li><li><a class="y-fp-pg-controls bullet y-link-1" href="http://it.notizie.yahoo.com/10/20100731/tts-estate-traffico-in-aumento-ma-circol-97cd5f9.html">Estate: traffico in aumento, ma circolazione regolare</a></li><li><a class="y-fp-pg-controls bullet y-link-1" href="http://it.notizie.yahoo.com/10/20100731/tts-vino-coldiretti-italia-sorpassa-fran-97cd5f9.html">Vino: Coldiretti,Italia sorpassa Francia</a></li><li><a class="y-fp-pg-controls bullet y-link-1" href="http://it.notizie.yahoo.com/10/20100731/tts-p3-napolitano-trame-inquietanti-turb-97cd5f9.html">P3, Napolitano: trame inquietanti, turbano e allarmano</a></li><li><a class="y-fp-pg-controls bullet y-link-1" href="http://it.notizie.yahoo.com/10/20100731/tts-morta-la-sceneggiatrice-suso-cecchi-97cd5f9.html">Morta la sceneggiatrice Suso Cecchi D&#39;Amico</a></li></ul>  <div class="more-link small">
+   <h3 class="y-txt-2">Altro<span class="hide-offscreen"> Notizie</span>:</h3>
+   <ul class="more itn">  <li><a  href="http://it.notizie.yahoo.com/">Ultime notizie</a></li>  <li><a class="bdr-l y-ln-1" href="http://it.notizie.yahoo.com/gossip.html">Gossip</a></li>  <li><a class="bdr-l y-ln-1" href="http://it.notizie.yahoo.com/approfondimenti/meteo.html">Meteo</a></li>                   </ul>
+                  </div><p class="small y-txt-3 time-stamp">aggiornato alle 14:49</p></div><div class="tabpanel clearfix"></div><div class="tabpanel clearfix"></div><div class="tabpanel clearfix"></div>
+  </div>
+ </div>    </div>
+        <div id="default-p_13923988-ft" class="ft"></div>
+</div><div id="default-p_21445691" class="mod view_default">  <div id="default-p_21445691-bd" class="bd type_marketindices type_marketindices_default"><div class="">
+    <form action="http://it.finsearch.yahoo.com/it/index.php" method="get" accept-charset="utf-8" class="quotes-form y-bg-2 y-ln-1  clearfix">
+    <dl class="markets clearfix strong small">
+        
+        <dt>
+    <a class="" href="http://it.finance.yahoo.com/q?s=FTSEMIB.MI"><span>FTSE MIB: </span>
+    <span class="normal-quote y-txt-2">21.022,00 </span>
+    <em class="negative">-0,35%</em></a>
+</dt><dt>
+    <a class="" href="http://it.finance.yahoo.com/q?s=ITLMS.MI"><span>FTSE IT All-Share: </span>
+    <span class="normal-quote y-txt-2">21.463,00 </span>
+    <em class="negative">-0,40%</em></a>
+</dt>
+    </dl>
+    <div class="getQuote clearfix">
+        <div class="quote-input-border y-ln-3">
+            <input id="id-21445691-quote" type="text" value="Inserisci codice azione" class="y-bg-1 y-txt-input small quotes-input y-ln-1"   name="nm">
+        </div>
+        <input type="hidden" name="s" value="it_sort"><input type="hidden" name="tp" value="*"><input type="hidden" name="r" value="*">
+        <input type="submit" class="quotes-btn small y-ln-4 y-txt-5 y-fp-pg-grad y-bg-hilite" value="Cerca quotazioni">
+    </div>
+</form><div id="default-u_24813756" class="mod view_default">  <div id="default-u_24813756-bd" class="bd type_ads type_ads_default"><div class="stck stck-reserve"><noscript><!-- --></noscript></div>
+
+<noscript>
+    <img src="/jserror?target=sdaPC&msg=noscript&data=STCK" style="position:absolute;left:-999em;">
+</noscript>    </div>
+        <div id="default-u_24813756-ft" class="ft"></div>
+</div></div>    </div>
+        <div id="default-p_21445691-ft" class="ft"></div>
+</div>
+                    </div>
+
+                    <div id="y-col2" class="fp-fx">
+<div id="default-p_22934726" class="mod view_default">  <div id="default-p_22934726-bd" class="bd type_contentcarousel type_contentcarousel_default"><div class="carousel-pos3 carousel-pos y-ln-1">
+<div id="p_22934726-carousel" class="y-carousel-wrapper">
+<div class="y-carousel">
+<ul class="y-carousel-list">
+    <li class="y-panel"><div id="default-p_17416020_be9" class="mod view_default">  <div id="default-p_17416020_be9-bd" class="bd type_contentcarouselTopten type_contentcarouselTopten_default"><div class="typedefault">            <div class="title-clip">
+            <div class="title-wrapper">
+            <h2 class="y-txt-modhdr bdr-b y-ln-1 "><div class="property" style="background-image: url(http://l.yimg.com/a/i/ww/met/mod/ybang_22_111908.png);_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://l.yimg.com/a/i/ww/met/mod/ybang_22_111908.png',sizingMethod='crop');_background-image: none;"><a href="http://it.search.yahoo.com/" class="y-txt-modhdr">Search</a></div>Trend del giorno</h2>
+            </div>
+            </div><div class="clearfix wrapper">
+	<ol class="first">
+	    <li class="y-txt-accent first"><a href="http://it.search.yahoo.com/search?cs=bz&vm=r&p=Cristina+Chiabotto&fr=fp-tts-709&fr2=ps" class="">Cristina Chiabot…</a></li><li class="y-txt-accent"><a href="http://it.search.yahoo.com/search?cs=bz&vm=r&p=Agriturismi+Toscana&fr=fp-tts-709&fr2=ps" class="">Agriturismi Tosc…</a></li><li class="y-txt-accent"><a href="http://it.search.yahoo.com/search?cs=bz&vm=r&p=Julia+Roberts&fr=fp-tts-709&fr2=ps" class="">Julia Roberts</a></li><li class="y-txt-accent"><a href="http://it.search.yahoo.com/search?cs=bz&vm=r&p=Previsioni+meteo&fr=fp-tts-709&fr2=ps" class="">Previsioni meteo</a></li><li class="y-txt-accent"><a href="http://it.search.yahoo.com/search?cs=bz&vm=r&p=Mario+Balotelli&fr=fp-tts-709&fr2=ps" class="">Mario Balotelli</a></li>
+    </ol>    <ol start="6">
+    	<li class="y-txt-accent first"><a href="http://it.search.yahoo.com/search?cs=bz&vm=r&p=Melissa+Satta&fr=fp-tts-709&fr2=ps" class="">Melissa Satta</a></li><li class="y-txt-accent"><a href="http://it.search.yahoo.com/search?cs=bz&vm=r&p=Velone&fr=fp-tts-709&fr2=ps" class="">Velone</a></li><li class="y-txt-accent"><a href="http://it.search.yahoo.com/search?cs=bz&vm=r&p=Cheryl+Cole&fr=fp-tts-709&fr2=ps" class="">Cheryl Cole</a></li><li class="y-txt-accent"><a href="http://it.search.yahoo.com/search?cs=bz&vm=r&p=Tormentone+Estate+2010&fr=fp-tts-709&fr2=ps" class="">Tormentone Estat…</a></li><li class="y-txt-accent"><a href="http://it.search.yahoo.com/search?cs=bz&vm=r&p=Bono&fr=fp-tts-709&fr2=ps" class="">Bono</a></li>
+    </ol></div>
+
+</div>    </div>
+        <div id="default-p_17416020_be9-ft" class="ft"></div>
+</div>    </li>
+</ul>
+</div>
+
+</div>
+</div>    </div>
+        <div id="default-p_22934726-ft" class="ft"></div>
+</div><div id="default-p_13923486" class="mod view_default">  <div id="default-p_13923486-bd" class="bd type_ads type_ads_default"><div class="fpad fpad-reserve"><noscript><div style="color: rgb(0, 0, 0); font-size: 12px; font-family: Verdana,arial,sans-serif; font-weight: bold; text-align: center;"> <a href=" http://downloads.yahoo.com/it/internetexplorer/ "><img src="http://ads.yimg.com/ev/eu/any/metro/300x250ie8it.gif" alt="SCARICATO SUBITO" width="300" height="250" border="0"></a> </div></noscript></div>
+
+<noscript>
+    <img src="/jserror?target=sdaPC&msg=noscript&data=FPAD" style="position:absolute;left:-999em;">
+</noscript>    </div>
+        <div id="default-p_13923486-ft" class="ft"></div>
+</div><div id="default-p_27859422" class="mod view_default">  <div id="default-p_27859422-bd" class="bd type_miniad type_miniad_default"><div class="ctr y-ln-1 clearfix ad-holder"><h2 class="y-txt-modhdr hdr strong">LE OFFERTE DI OGGI</h2><div id="default-u_28285431" class="mod view_default">  <div id="default-u_28285431-bd" class="bd type_ads type_ads_default"><div class="prom1 prom1-reserve"><noscript><div class="ins_prom">
+
+	<div style="float:left;padding:2px 3px 0 0;"><A href="http://it.mobile.yahoo.com/" target="_blank"><img src="http://ads.yimg.com/ev/eu/any/prom/mobile.gif" border="0" width="50" height="50"></a></div>
+
+	<div class="small" style="line-height:1.4em;">
+
+	<a href="http://it.mobile.yahoo.com/" target="_blank">
+
+	<b>Yahoo! Mobile</b><br>
+	<span style="color:#666;">Yahoo! Mail sul tuo cellulare</span></a>
+	</div>
+
+	<div style="clear:both;"></div>
+
+</div></noscript></div>
+
+<noscript>
+    <img src="/jserror?target=sdaPC&msg=noscript&data=PROM1" style="position:absolute;left:-999em;">
+</noscript>    </div>
+        <div id="default-u_28285431-ft" class="ft"></div>
+</div><div id="default-u_30344737" class="mod view_default">  <div id="default-u_30344737-bd" class="bd type_ads type_ads_default"><div class="prom2 prom2-reserve"><noscript><div class="ins_prom">
+
+	<div style="float:left;padding:2px 3px 0 0;"><A href="http://it.viaggi.yahoo.com/" target="_blank"><img src="http://l.yimg.com/i/i/it/tr/botto.jpg" border="0" width="50" height="50"></a></div>
+
+	<div class="small" style="line-height:1.4em;">
+
+	<a href="http://it.viaggi.yahoo.com/" target="_blank">
+
+	<b>Yahoo! Viaggi</b><br>
+	<span style="color:#666;">Vacanze al top? Cerca le offerte di Expedia</span></a>
+	</div>
+
+	<div style="clear:both;"></div>
+
+</div></noscript></div>
+
+<noscript>
+    <img src="/jserror?target=sdaPC&msg=noscript&data=PROM2" style="position:absolute;left:-999em;">
+</noscript>    </div>
+        <div id="default-u_30344737-ft" class="ft"></div>
+</div></div>    </div>
+        <div id="default-p_27859422-ft" class="ft"></div>
+</div><div id="default-p_17335519" class="mod view_default">  <div id="default-p_17335519-bd" class="bd type_contentcarousel type_contentcarousel_default"><div class="carousel-pos4 carousel-pos y-ln-1">
+<div id="p_17335519-carousel" class="y-carousel-wrapper">
+<div class="y-carousel">
+<ul class="y-carousel-list">
+    <li class="y-panel"><div id="default-p_30344833_e6a" class="mod view_default">  <div id="default-p_30344833_e6a-bd" class="bd type_contentcarouselslideshow1 type_contentcarouselslideshow1_default"><div class="type4gallery">            <div class="title-clip">
+            <div class="title-wrapper">
+            <h2 class="y-txt-modhdr bdr-b y-ln-1 "><div class="property" style="background-image: url(http://l.yimg.com/a/i/ww/met/mod/ybang_22_111908.png);_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://l.yimg.com/a/i/ww/met/mod/ybang_22_111908.png',sizingMethod='crop');_background-image: none;"><a href="http://it.speciali.yahoo.com/latuahomepage/" class="y-txt-modhdr">Homepage</a></div>Applicazioni per tutti i gusti!</h2>
+            </div>
+            </div><div class="wrapper clearfix">
+    
+    <ul class="thumbs clearfix"><li class="thumb first"><a  href="http://it.yahoo.com/add?url=http://www.wired.it/" class="img">
+    <img class="y-ln-1" width="85" height="75" alt="Wired" src="http://l.yimg.com/i/i/it/hp/wired.jpg">
+</a><span class="link"><a  href="http://it.yahoo.com/add?url=http://www.wired.it/" class="" style="line-height:;">Wired</a></span></li><li class="thumb"><a  href="http://it.yahoo.com/add?url=http://www.lamiaaria.it/" class="img">
+    <img class="y-ln-1" width="85" height="75" alt="La mia Aria" src="http://l.yimg.com/i/i/it/hp/lamia1.jpg">
+</a><span class="link"><a  href="http://it.yahoo.com/add?url=http://www.lamiaaria.it/" class="" style="line-height:;">LaMiaAria</a></span></li><li class="thumb"><a  href="http://it.yahoo.com/add?url=http://www.quattroruote.it/" class="img">
+    <img class="y-ln-1" width="85" height="75" alt="Quattroruote" src="http://l.yimg.com/i/i/it/hp/quatt3.jpg">
+</a><span class="link"><a  href="http://it.yahoo.com/add?url=http://www.quattroruote.it/" class="" style="line-height:;">Quattroruote</a></span></li><li class="thumb"><a  href="http://it.yahoo.com/add?url=http://atcasa.corriere.it/" class="img">
+    <img class="y-ln-1" width="85" height="75" alt="AT Casa" src="http://l.yimg.com/i/i/it/hp/atok2.jpg">
+</a><span class="link"><a  href="http://it.yahoo.com/add?url=http://atcasa.corriere.it/" class="" style="line-height:;">AT Casa</a></span></li></ul>
+</div>
+
+</div>    </div>
+        <div id="default-p_30344833_e6a-ft" class="ft"></div>
+</div>    </li>
+</ul>
+</div>
+<div class="y-nav y-bg-2 y-ln-1 clearfix">&nbsp;</div>
+</div>
+</div>    </div>
+        <div id="default-p_17335519-ft" class="ft"></div>
+</div>
+                    </div>
+
+                </div>
+
+                <span class="y-chrome-bottom y-fp-ln-pg"><span class="left y-fp-pg-controls"></span><span class="right y-fp-pg-controls"></span></span>
+
+            </div>
+
+            <div id="y-footer">
+<div id="default-p_13848969" class="mod view_default">  <div id="default-p_13848969-bd" class="bd type_footer type_footer_default"><div class="ysites sections clearfix y-ftr-bg y-ftr-ln y-fp-pg-grad cols2 double-align">
+    <span class="chrome"><span class="tl y-fp-pg-controls"></span><span class="tr y-fp-pg-controls"></span></span>
+<div class="ysites-col"><h2 class="y-ftr-txt-hdr"">SERVIZI YAHOO!</h2><div class="col first"><ul class="clearfix y-ftr-ln small"><li><a class="y-fp-pg-controls y-ftr-link" href="http://it.cars.yahoo.com/">Auto</a></li><li><a class="y-fp-pg-controls y-ftr-link" href="http://it.movies.yahoo.com/">Cinema</a></li><li><a class="y-fp-pg-controls y-ftr-link" href="http://it.finance.yahoo.com/">Finanza</a></li><li><a class="y-fp-pg-controls y-ftr-link" href="http://www.flickr.com/">Flickr</a></li><li><a class="y-fp-pg-controls y-ftr-link" href="http://it.games.yahoo.com/">Giochi</a></li></ul></div><div class="col"><ul class="clearfix y-ftr-ln small"><li><a class="y-fp-pg-controls y-ftr-link" href="http://it.groups.yahoo.com/">Gruppi</a></li><li><a class="y-fp-pg-controls y-ftr-link" href="http://it.meetic.yahoo.net/index.php?mtcmk=049805">Incontri</a></li><li><a class="y-fp-pg-controls y-ftr-link" href="http://it.mappe.yahoo.net/tc/index_yahoo.html">Mappe</a></li><li><a class="y-fp-pg-controls y-ftr-link" href="http://it.mobile.yahoo.com/">Mobile</a></li><li><a class="y-fp-pg-controls y-ftr-link" href="http://new.it.music.yahoo.com/">Musica</a></li></ul></div><div class="col"><ul class="clearfix y-ftr-ln small"><li><a class="y-fp-pg-controls y-ftr-link" href="http://it.toolbar.yahoo.com/">Toolbar</a></li><li><a class="y-fp-pg-controls y-ftr-link" href="http://it.tv.yahoo.com/">TV</a></li><li><a class="y-fp-pg-controls y-ftr-link" href="http://it.viaggi.yahoo.com/">Viaggi</a></li><li><a class="y-fp-pg-controls y-ftr-link" href="http://it.mobilebroadband.yahoo.com/">Web Key</a></li><li><a class="y-fp-pg-controls y-ftr-link" href="http://it.eurosport.yahoo.com/calciomercato/">Calciomercato</a></li></ul></div><div class="col"><ul class="clearfix y-ftr-ln small"><li><a class="y-fp-pg-controls y-ftr-link" href="http://everything.yahoo.com/it/?world">Yahoo! nel mondo</a></li><li><a class="y-fp-pg-controls y-ftr-link" href="http://developer.yahoo.com/">Yahoo! Developer Network</a></li><li><a class="y-fp-pg-controls y-ftr-link" href="http://it.speciali.yahoo.com/latuahomepage/index.html">Fai di Y! la tua home page</a></li><li><a class="y-fp-pg-controls y-ftr-link" href="http://it.promotions.yahoo.com/forgood/">Yahoo! per il Sociale</a></li></ul></div></div>
+<div class="stacked-col"><div class="col first"><h2 class="y-ftr-txt-hdr"">PUBBLICITÀ SU YAHOO!</h2><ul class="clearfix y-ftr-ln small"><li class="double primary y-ftr-ln"><a class="y-fp-pg-controls y-ftr-link" href="http://it.b2b.yahoo.net/">Pubblicità su Yahoo!</a></li><li class="double secondary"><a class="y-fp-pg-controls y-ftr-link" href="http://searchmarketing.yahoo.com/it_IT/pn/ps.php">Partner Solutions</a></li><li><a class="y-fp-pg-controls y-ftr-link" href="http://adspecs.yahoo.it/">Media Solution</a></li><li><a class="y-fp-pg-controls y-ftr-link" href="http://searchmarketing.yahoo.com/it_IT/">Annunci sponsorizzati</a></li></ul></div><div class="col"><h2 class="y-ftr-txt-hdr"">INFO SU YAHOO!</h2><ul class="clearfix y-ftr-ln small"><li class="double primary y-ftr-ln"><a class="y-fp-pg-controls y-ftr-link" href="http://help.yahoo.com/l/it/yahoo/helpcentral/">Aiuto</a></li><li class="double secondary"><a class="y-fp-pg-controls y-ftr-link" href="http://surveylink.yahoo.com/wix/p6790352.aspx?l=16">Invia commento</a></li><li class="double primary y-ftr-ln"><a class="y-fp-pg-controls y-ftr-link" href="https://yahoo.recruitmax.com/MAIN/careerportal/default.cfm?szUniqueCareerPortalID=ce4ab350-5e9f-48dc-881e-a1d215e48058">Lavora con noi</a></li><li class="double secondary"><a class="y-fp-pg-controls y-ftr-link" href="http://it.docs.yahoo.com/info/">Info sulla società</a></li><li><a class="y-fp-pg-controls y-ftr-link" href="http://www.facebook.com/pages/Yahoo-Italia/81262596234">Yahoo! Italia su Facebook</a></li></ul></div></div>    <span class="chrome"><span class="bl y-fp-pg-controls"></span><span class="br y-fp-pg-controls"></span></span>
+</div><!-- End of Maple Footer Module -->    </div>
+        <div id="default-p_13848969-ft" class="ft"></div>
+</div>
+            </div>
+
+            <div id="y-subfooter">
+<div id="default-p_24803755" class="mod view_default">  <div id="default-p_24803755-bd" class="bd type_subfooter type_subfooter_default">    	<div class="info small"><p class="y-subftr-txt copyright">Copyright © 2010 Yahoo! Tutti i diritti riservati.</p><ul><li class="first"><a class="y-fp-pg-controls y-subftr-link" href="http://info.yahoo.com/privacy/it/yahoo/">La tua Privacy</a></li><li><a class="y-fp-pg-controls y-subftr-link" href="http://info.yahoo.com/legal/it/yahoo/tos.html">Condizioni di utilizzo</a></li><li><a class="y-fp-pg-controls y-subftr-link" href="http://it.docs.yahoo.com/copyright_it.html">Proprietà intellettuale</a></li></ul></div><!-- End of Maple SubFooter Module --><div id="default-u_26391831" class="mod view_default">  <div id="default-u_26391831-bd" class="bd type_ads type_ads_default"><div class="adbcn adbcn-reserve"><noscript><!--ADBCN-->
+</noscript></div>
+
+<noscript>
+    <img src="/jserror?target=sdaPC&msg=noscript&data=ADBCN" style="position:absolute;left:-999em;">
+</noscript>    </div>
+        <div id="default-u_26391831-ft" class="ft"></div>
+</div><script>OnloadCache.disable();</script><div id="default-u_15191401" class="mod view_default">  <div id="default-u_15191401-bd" class="bd type_ads type_ads_default"><div class="foot9 foot9-reserve"><!-- metro normal ad --><!-- metro fallback ad static --><!--FOOT9--></div>    </div>
+        <div id="default-u_15191401-ft" class="ft"></div>
+</div>    </div>
+        <div id="default-p_24803755-ft" class="ft"></div>
+</div>
+            </div>
+<div id="y-width"></div>
+<div id="y-min-width"></div>
+    <script>
+    if ('undefined' != typeof(rt_LogTime)) { rt_LogTime('t_rtpage', rtTop); }
+    rtJSStart = Number(new Date());
+</script>
+<!-- bottom -->
+
+<script type="text/javascript" src="http://l.yimg.com/a/combo?arc/yui/yui_0.2.4.js"></script>
+<script type="text/javascript">
+YUI.namespace("presentation");
+YUI.presentation.lazyScriptList = ["http://l.yimg.com/a/combo?arc/yui/substitute_0.1.9.js&arc/yui/oop_0.1.10.js&arc/yui/event-custom_0.1.5.js&arc/yui/io-base_0.1.10.js&arc/yui/dom_0.1.10.js&arc/yui/event-base_0.1.5.js&arc/yui/attribute_0.1.11.js&arc/yui/base-base_0.1.10.js&arc/yui/pluginhost_0.1.4.js&arc/yui/node_0.1.25.js&arc/yui/json_0.1.13.js&arc/yui/anim-base_0.1.9.js&arc/yui/anim-easing_0.1.9.js&arc/yui/anim-node-plugin_0.1.8.js&arc/yui/cookie_0.1.9.js&arc/yui/yuidef_0.1.9.js&arc/framework/module_platform_0.1.53.js&arc/framework/resourcemgr_0.1.14.js&metro2/dali/dali_transport_1.1.28.js&arc/framework/module_api_0.1.14.js&metro2/dali/metro_dali_1.0.19.js&metro/uiplugins/userinfo_service_0.1.7.js&metro/uiplugins/metro_viewtype_0.1.16.js&metro/uiplugins/default_viewtype_0.1.53.js&metro/uiplugins/edit_viewtype_0.1.31.js&metro/uiplugins/pa_viewtype_0.1.5.js&arc/util/ylc_1.8.17.js&metro/uiplugins/instrumentation_service_0.1.12.js&metro/uiplugins/metrologger_service_0.1.10.js&metro/sda/sda_bridge_service_0.0.5.js&metro/uiplugins/autohide_service_0.1.9.js&metro/uiplugins/sethomepage_service_0.0.22.js&metro/uicontrib/gallery-base64_0.1.0.js&metro/uicontrib/gallery-y64_0.1.0.js&metro/uicontrib/rdsig_click_0.1.4.js&metro/fp/fp_0.1.67.js&metro/uiplugins/metrics_service_0.1.5.js&metro/uiplugins/metro_performance_0.1.7.js&arc/framework/yui_service_0.1.11.js&metro/uiplugins/aria_service_0.1.13.js&metro/uiplugins/tablist_service_0.1.30.js&metro/uiplugins/iframeshim_service_0.0.12.js&metro/uiplugins/menu_service_0.1.9.js&metro/masthead/masthead_0.2.157.js&metro/uiplugins/statemgr_service_0.1.11.js&metro/navbar/navbar_0.1.85.js&metro/marketindices/marketindices_0.1.21.js&metro/uiplugins/ulm_service_0.1.31.js&metro/uiplugins/carousel_service_0.1.39.js&metro/news/news_0.1.53.js&metro/sda/sda_deferred_service_0.0.14.js&metro/sda/sda_transport_0.0.10.js&metro/sda/sda_0.1.36.js&metro/fptoday/fptoday_hover_0.1.74.js&metro/tuc/tuc_outboxlite_0.0.21.js&metro/contentcarousel/contentcarousel_0.1.39.js&metro/contentcarousel/contentcarouselslideshow1_0.1.13.js","http://l.yimg.com/a/combo?metro/uiplugins/toolbar_bridge_service_0.1.17.js&metro/uiplugins/tooltip_service_0.1.46.js&metro/uiplugins/sortable_service_0.1.20.js&metro/pa/pautil_0.1.3.js&metro/pa/palist_0.1.14.js&metro/pa/pa_0.1.208.js"];
+</script>
+
+
+<script type="text/javascript">
+
+rtJSLoad=Number(new Date());
+</script>
+<script type="text/javascript">
+(function()
+{
+    YUI.add('dali_config', function(Y)
+    {        
+        Y.namespace('dali.config');
+        Y.dali.config = {"props":{"dali":{"crumb":"invalid","mLogin":0},"proxyUrl":"\/js"},"data":null,"mods":[{"data":{"maple":{"platform":{},"module":"p_30345150","instance":"p_30345150","signature":"xbYp4bN.Ui8_mxd5qmYgjg--"}},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"p_30345150","ns":"type_windowshadecontainer","type":"windowshadecontainer","contentId":"30345150","tags":[],"title":null,"icon":"","detailUrl":""},"state":{"collapsed":0,"view":"default","defer":false},"strs":{},"res":{},"mods":[{"data":{"maple":{"platform":{},"module":"u_21445690","instance":"__mmh_0","ba":{"_action":"show","chrome":true,"_container":true,"_id":"u_21445690"},"signature":"Mb5djK9dAPRVxUgzhPuKVQ--"}},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"u_21445690","ns":"type_ipredirect","type":"ipredirect","contentId":"21445690","tags":[],"title":"Redirect Window Shade","icon":"","detailUrl":""},"state":{"collapsed":0,"view":"default","defer":false},"strs":{},"res":{}},{"data":{"maple":{"platform":{},"module":"u_30345158","instance":"__mmh_0","ba":{"_action":"show","chrome":true,"_container":true,"_id":"u_30345158"},"signature":"Juby2_LUmTB79I8TfrTujA--"}},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"u_30345158","ns":"type_sethomepagewindowshade","type":"sethomepagewindowshade","contentId":"30345158","tags":[],"title":null,"icon":"","detailUrl":""},"state":{"collapsed":0,"view":"default","defer":false},"strs":{},"res":{}},{"data":{"maple":{"platform":{},"module":"u_30345330","instance":"__mmh_0","ba":{"_action":"show","chrome":true,"_container":true,"_id":"u_30345330"},"signature":"M7XzKwobE7n9EHZquiVQOQ--"}},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"u_30345330","ns":"type_genericwindowshade","type":"genericwindowshade","contentId":"30345330","tags":[],"title":null,"icon":"","detailUrl":""},"state":{"collapsed":0,"view":"default","defer":false},"strs":{},"res":{}}]},{"data":{"maple":{"platform":{},"module":"p_13838465","instance":"p_13838465","signature":"_Rbozikhk8NgqGMDmKHw6w--"},"useIntlSwitch":true,"useIntlSearchToggle":false,"useLangFilter":true,"language":"lang_it","isIntlSearchEnabled":false,"searchIntl":"it","visibleItems":"7","preloadSRP":false,"srpAssetURL":"http:\/\/search.yahoo.com\/resources?js=1","horizontalPadding":"0em","allow.redirected.ult.links":true,"formData":{"web":{"button":"Cerca sul web","action":"http:\/\/it.search.yahoo.com\/search","bcnDrawerOpen":"http:\/\/www.yahoo.com","bcnDrawerClose":"http:\/\/www.yahoo.com","bcnAutoOpen":"http:\/\/www.yahoo.com","bcnScroll":"http:\/\/www.yahoo.com","bcnOnOff":"http:\/\/www.yahoo.com","yltClickSuggestion":"http:\/\/it.search.yahoo.com\/search","yltInfoPage":"http:\/\/help.yahoo.com\/l\/it\/yahoo\/search\/basics\/basics-27.html","settingsUrl":"http:\/\/search.yahoo.com\/preferences\/preferences?page=search_assist","noQueryURL":null},"images":{"button":"Ricerca immagini","action":"http:\/\/it.images.search.yahoo.com\/search\/images","bcnDrawerOpen":"http:\/\/www.yahoo.com","bcnDrawerClose":"http:\/\/www.yahoo.com","bcnAutoOpen":"http:\/\/www.yahoo.com","bcnScroll":"http:\/\/www.yahoo.com","bcnOnOff":"http:\/\/www.yahoo.com","yltClickSuggestion":"http:\/\/it.images.search.yahoo.com\/search\/images","yltInfoPage":"http:\/\/help.yahoo.com\/l\/it\/yahoo\/search\/basics\/basics-27.html","settingsUrl":"http:\/\/search.yahoo.com\/preferences\/preferences?page=search_assist","noQueryURL":null},"video":{"button":"Ricerca video","action":"http:\/\/it.video.search.yahoo.com\/search\/video","noQueryURL":null},"yellowpages":{"button":"Ricerca Pagine Gialle","action":"http:\/\/it.search.yahoo.com\/yp\/search","noQueryURL":null},"shopping":{"button":"Ricerca shopping","action":"http:\/\/cgi.europe.yahoo.com\/cgi\/de\/it_kelk.cgi","noQueryURL":null},"more":{"href":"http:\/\/it.docs.yahoo.com\/servizi-di-ricerca.html"}},"saData":{"normalizationRules":[["A","A|\u00c0|\u00c1|\u00c2|\u00c3"],["AE","AE|\u00c6|\u00c4"],["C","C|\u00c7"],["E","E|\u00c8|\u00c9|\u00ca|\u00cb"],["I","I|\u00cc|\u00cd|\u00ce|\u00cf"],["D","D|\u00d0"],["N","N|\u00d1"],["O","O|\u00d2|\u00d3|\u00d4|\u00d5"],["OE","OE|\u00d6|\u00d8"],["U","U|\u00d9|\u00da|\u00db"],["UE","UE|\u00dc"],["Y","Y|\u00dd"],["TH","TH|\u00de"],["SS","SS|\u00df"],[" "," |'|\\-"]],"minQueryLength":2,"queryDelay":200,"webGossipUrl":"http:\/\/sugg.it.search.yahoo.com\/gossip-it-sayt?nresults=10&queryfirst=2&output=yjsonp&version=&command=","imgGossipUrl":"http:\/\/sugg.search.yahoo.com\/gossip-us-fp\/?output=yjsonp&command=","openAnimDuration":"0.2","closeAnimDuration":"0.15","cssFontSizeSAYT":"","cssSAWindowMaxHeightIE6":"11em","cssSAWindowSuggestionHeightIE6":""},"HTML_SECONDINPUT":"<input id=\"p_13838465-location\" class=\"input-location med-large\" type=\"text\">","HTML_SECONDLABEL":"<label for=\"p_13838465-in\" class=\"in-searchlabel y-mast-txt medium\">in<\/label>","HTML_HOODCONTENT_ENABLED":"<h3 class=\"hide-offscreen\">Suggerimenti di ricerca<\/h3>\n    <div class=\"sa-options small\">\n        <a id=\"p_13838465-sa-info\" class=\"sa-info\" href=\"http:\/\/help.yahoo.com\/l\/it\/yahoo\/search\/basics\/basics-27.html\">Ricerca assistita:<\/a>\n        <span class=\"on\">\n            Attivi\n        <\/span>\n        <a id=\"p_13838465-offswitch\" class=\"off active\" href=\"#turnoff\">\n            Disattivi\n        <\/a>\n    <\/div><div id=\"p_13838465-sayt\" class=\"sa-holder\">\n    <ul class=\"hints\">\n        <li>Nessun suggerimento.<\/li>\n        <li>Inizia a digitare la query di ricerca.<\/li>\n    <\/ul>\n<\/div>","HTML_HOODCONTENT_DISABLED":"<h3 class=\"hide-offscreen\">Suggerimenti di ricerca<\/h3>\n    <div class=\"sa-options small\">\n        <a id=\"p_13838465-sa-info\" class=\"sa-info\" href=\"http:\/\/help.yahoo.com\/l\/it\/yahoo\/search\/basics\/basics-27.html\">Ricerca assistita:<\/a>\n        <a id=\"p_13838465-onswitch\" class=\"on active\" href=\"#turnon\">\n            Attivi\n        <\/a>\n        <span class=\"off inactive\">\n            Disattivi\n        <\/span>\n    <\/div><div id=\"p_13838465-sayt\" class=\"sa-holder\">\n    <ul class=\"hints\">\n        <li>I suggerimenti sono disattivati.<\/li>\n        <li>\n            <a href=\"#turnon\" id=\"p_13838465-sa-hintswitch\" class=\"hswitch\">\n                Clicca qui per attivarli.\n            <\/a>\n        <\/li>\n    <\/ul>\n<\/div>","HTML_RESULTSLIST":"<ul id=\"p_13838465-results\" class=\"sa-results\"><\/ul>","HTML_RESULTSITEM":"<li><a href=\"\" tabindex=\"-1\"><\/a><\/li>","HTML_RESULTSITEM_WITH_ADDTO":"<li><a class=\"app-available y-fp-pg-controls-nt\" href=\"\" tabindex=\"-1\"><\/a><em class=\"small added-notice\"><em>Aggiunto<\/em><\/em><a class=\"y-fp-pg-controls-nt add-to-y\" href=\"javascript:void(0);\" tabindex=\"-1\">Aggiungi a Yahoo!<\/a><\/li>","HTML_RESULTS_SCROLLARROWS":"<div class=\"sa-arrows \">\n    <a id=\"p_13838465-arr-up\" class=\"hide-textindent up y-mast-sprite\" href=\"http:\/\/it.search.yahoo.com\/\" tabindex=\"-1\">Sposta selezione in su<\/a>\n    <a id=\"p_13838465-arr-down\" class=\"hide-textindent down denabled y-mast-sprite\" href=\"http:\/\/it.search.yahoo.com\/\" tabindex=\"-1\"> Sposta selezione in gi\u00f9<\/a>\n<\/div>","HTML_ERROR_STRUCTURE":"<div id=\"p_13838465-err-msg\" class=\"error-ctr\"><span class=\"error-icon y-glbl-universal\"><\/span><div class=\"error-msg\">{_error_msg_}<\/div>\n<a id=\"p_13838465-close-btn\" class=\"hide-textindent y-glbl-universal close-btn\" href=\"javascript:void(0);\">Chiudi<\/a><\/div>","defLoc":"Siena, Toscana","dummyYLT":"","YAHOO_CSC_PVID":"0A1Z0EPDoEn3RQ8Mfcz9DRhAwc0FAkxUG8YADwV9","FIRST_TAB_FOR_SEARCH":"web","search.tab.web.showdrawerhandle":true,"search.tab.images.showdrawerhandle":true,"search.tab.web.showdrawer":true,"search.tab.images.showdrawer":false,"use.fxjsonp":false,"spaceid":"2142153755","frCode":"yfp-t-709"},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"p_13838465","ns":"type_masthead","type":"masthead","trusted":true,"contentId":"13838465","tags":[],"title":"Masthead","icon":"","detailUrl":""},"state":{"collapsed":0,"view":"default","defer":false},"strs":{"STR.MASTHEAD.LABEL.SEARCHTERMS":"Termini di ricerca","STR.MASTHEAD.HAS_SUGGESTION":"Sono disponibili suggerimenti per la ricerca. Usa i tasti freccia su e gi\u00f9 per scorrerli.","STR.MASTHEAD.NO_SUGGESTION":"Non sono disponibili suggerimenti per la ricerca","STR.SA.DROPDOWN.DESCRIPTION":"Usa i tasti freccia su e gi\u00f9","STR.SA.TOGGLE.ON":"Apri ricerca assistita","STR.SA.TOGGLE.OFF":"Chiudi ricerca assistita"},"res":{},"mods":[{"data":{"maple":{"platform":{},"module":"u_14119506","instance":"__mmh_0","ba":{"_action":"show","chrome":true,"_container":true,"_id":"u_14119506"},"signature":"zjIawTbVhFNwkjsG02RmoA--"},"adlocs":"hdrm"},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"u_14119506","ns":"type_ads","trusted":true,"type":"ads","contentId":"14119506","tags":[],"title":"FP ADs","icon":"","shortTitle":"FP ADs","detailUrl":"","chromecolor":"blue"},"state":{"view":"default","defer":false,"collapsed":0},"strs":{},"res":{}}]},{"data":{"maple":{"platform":{},"module":"p_13838466","instance":"p_13838466","signature":"wzcwhiT.8k6vWv8ewaGm9A--"},"browser":"unknown","hpOverlay":"","hpCode":"<a class=\"y-hdr-link icon link\" id=\"p_13838466-homepage\" href=\"http:\/\/it.yahoo.com\/set\" http:\/\/www.yahoo.com>Fai di Y! la tua home page<\/a>","promoCode":"<div class=\"promotion\"><a class=\"y-hdr-link link\" href=\"http:\/\/it.mobile.yahoo.com\/\">Cellulare<\/a><\/div>"},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"p_13838466","ns":"type_navbar","trusted":true,"type":"navbar","contentId":"13838466","tags":[],"title":"Navigation bar","icon":"","detailUrl":""},"state":{"collapsed":0,"view":"default","defer":false},"strs":{"PAGEOPTIONS.HTML":"<div id=\"p_13838466-pageoptions-dropdown\" class=\"y-bg-3 y-ln-3 hide-offscreen hidden med-small\">\n<ul class=\"clearfix \">\n<li class=\"border-b y-ln-3\"><h3 class=\"y-txt-2\">Seleziona colore<\/h3>\n<ul id=\"p_13838466-color\" class=\"colors clearfix\">\n<li class=\"selected\"><a id=\"th-10000\" class=\"theme\" style=\"background:transparent url(http:\/\/d.yimg.com\/a\/i\/ww\/met\/sprite_themeicns_070809.gif) no-repeat 0px -15px;\" href=\"#\" title=\"Pietra\" >Pietra<\/a><\/li><li class=\"\"><a id=\"th-10001\" class=\"theme\" style=\"background:transparent url(http:\/\/d.yimg.com\/a\/i\/ww\/met\/sprite_themeicns_070809.gif) no-repeat -57px 0px;\" href=\"#\" title=\"Verde erba\" >Verde erba<\/a><\/li><li class=\"\"><a id=\"th-10002\" class=\"theme\" style=\"background:transparent url(http:\/\/d.yimg.com\/a\/i\/ww\/met\/sprite_themeicns_070809.gif) no-repeat -76px 0px;\" href=\"#\" title=\"Bubblegum\" >Bubblegum<\/a><\/li><li class=\"\"><a id=\"th-10003\" class=\"theme\" style=\"background:transparent url(http:\/\/d.yimg.com\/a\/i\/ww\/met\/sprite_themeicns_070809.gif) no-repeat -19px 0px;\" href=\"#\" title=\"Violetto\" >Violetto<\/a><\/li><li class=\"\"><a id=\"th-10004\" class=\"theme\" style=\"background:transparent url(http:\/\/d.yimg.com\/a\/i\/ww\/met\/sprite_themeicns_070809.gif) no-repeat -38px 0px;\" href=\"#\" title=\"Mandarino\" >Mandarino<\/a><\/li><li class=\"\"><a id=\"th-10005\" class=\"theme\" style=\"background:transparent url(http:\/\/d.yimg.com\/a\/i\/ww\/met\/sprite_themeicns_070809.gif) no-repeat -95px 0px;\" href=\"#\" title=\"Blu oceano\" >Blu oceano<\/a><\/li>\n<\/ul>\n<\/li>\n<li class=\"border-t y-ln-3\"><a href=\"http:\/\/it.yahoo.com\/switchlayout?_crumb=\">Passa alla vista compatta<\/a><\/li>\n<li><a href=\"http:\/\/it.yahoo.com\/newsswap?_crumb=&pos=1&_done=http:\/\/it.yahoo.com\" class=\"last\">Sposta le notizie in alto<\/a><\/li>\n<\/ul>\n<\/div>"},"res":{},"mods":[{"data":{"maple":{"platform":{},"module":"p_29445946","instance":"__mmh_0","ba":{"_action":"show","chrome":true,"_container":true,"_id":"p_29445946"},"signature":"3MiuOJktScSCgOaj1rzynw--"},"isLoggedIn":false,"statusErrorHTML":"<div class=\"su-dropdown su-error\" id=\"p_29445946-su-dropdown\">\n    <div class=\"su-dropdown-outer y-ln-3 y-bg-3\">\n                <div class=\"oops-msg\">\n            <span class=\"icon y-glbl-universal\"><\/span>\n            <h4 class=\"oops\">La funzione di condivisione dello stato non \u00e8 disponibile al momento. Riprova pi\u00f9 tardi.<\/h4>\n            <div class=\"btn-container\">\n                <button data-b=\"http:\/\/www.yahoo.com\" class=\"cta-btn su-btn\" id=\"p_29445946-su-cancel\">Chiudi<\/button>\n            <\/div>\n        <\/div>\n    <\/div>\n    <div class=\"y-fp-pg-controls su-arrow\"><\/div>\n    <a data-b=\"http:\/\/www.yahoo.com\" class=\"y-fp-pg-controls close hide-textindent\" id=\"p_29445946-su-close\">Chiudi<\/a>\n<\/div>","isLitePage":false},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"p_29445946","ns":"type_tuc","type":"tuc","contentId":"29445946","tags":[],"title":"Tiny User Card","icon":"","shortTitle":"Tiny User Card","detailUrl":"","chromecolor":"blue"},"state":{"view":"default","defer":false,"collapsed":0},"strs":{"STR.EYEBROW.TOOLTIP.YAHOO.PRIVATE":"L'aggiornamento non sar\u00e0 visibile a nessuno.","STR.EYEBROW.TOOLTIP.YAHOO.PUBLIC":"L'aggiornamento sar\u00e0 visibile a tutti.","STR.EYEBROW.TOOLTIP.YAHOO.FRIENDS":"L'aggiornamento sar\u00e0 visibile ai tuoi amici su Yahoo!","STR.EYEBROW.TOOLTIP.FACEBOOK.ENABLED":"Il tuo aggiornamento sar\u00e0 condiviso in Facebook in base alle tue preferenze.","STR.EYEBROW.TOOLTIP.FACEBOOK.DISABLED":"Il tuo aggiornamento non sar\u00e0 condiviso in Facebook.","STR.EYEBROW.TOOLTIP.SELCET_DESTINATION":"Primo, seleziona una fonte da condividere.","STR.EYEBROW.NUMBER_OF_CHARACTERS_LEFT":"{number} caratteri rimasti"},"res":{}}]},{"data":{"maple":{"platform":{},"module":"u_30345382","instance":"u_30345382","ba":{"_id":"u_30345382","chrome":"1"},"signature":"POye7KhtkXVZ_WdoSHA47A--"}},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"u_30345382","ns":"type_pahowto","trusted":true,"type":"pahowto","contentId":"30345382","tags":[],"title":"","icon":"","shortTitle":"","detailUrl":"","chromecolor":"blue"},"state":{"view":"default","defer":false,"collapsed":0},"strs":{},"res":{}},{"data":{"maple":{"platform":{},"module":"u_2588582","instance":"u_2588582","ba":{"_id":"u_2588582","chrome":"1"},"signature":"wDI2WAWAUKCgRu1hH7c33w--"},"add.enabled":1,"edit.enabled":1,"isLitePage":false,"loggedIn":false,"delay_mouseover":"400","delay_mouseout":"600","delay_added_fade":"1150","duration_added_fade":"500","yservices":[{"props":{"trusted":true,"cpos":1,"id":"p_24793754_c98","type":"yservices","ns":"type_yservices","contentId":"24793754","tags":[],"title":"Tutti i servizi Yahoo!","icon":"http:\/\/d.yimg.com\/a\/i\/ww\/met\/pa_icons_18\/yahooservices_20100602.gif","shortTitle":"Tutti i servizi Yahoo!","detailUrl":"http:\/\/everything.yahoo.com\/it\/","chromecolor":"violet"},"state":{"defer":false,"collapsed":0},"prefs":{"isc":0,"_mc":0},"suid":"24793754"}],"pacontainer":{"props":{"trusted":true,"id":"p_26583360","type":"pacontainer","ns":"type_pacontainer","contentId":"26583360","tags":[],"title":"PA Container","icon":"","shortTitle":"PA Container","detailUrl":"","chromecolor":"blue"},"state":{"defer":false,"collapsed":0},"prefs":{"isc":0,"_mc":0},"suid":"26583360"},"userlist":[{"props":{"cpos":1,"id":"u_14782488","type":"ymail","ns":"type_mail","contentId":"14782488","tags":[],"title":"Mail","icon":"http:\/\/d.yimg.com\/a\/i\/ww\/met\/pa_icons_18\/mail_20100602.gif","shortTitle":"Mail","detailUrl":"http:\/\/mail.yahoo.com?.intl=it","chromecolor":"violet"},"state":{"defer":false,"collapsed":0},"prefs":{"isc":0,"_mc":0},"suid":"14782488"},{"props":{"cpos":2,"id":"u_25021325","type":"autoapp","ns":"type_autoapp","contentId":"25021325","tags":[],"title":"Answers","icon":"http:\/\/d.yimg.com\/a\/i\/ww\/met\/pa_icons_18\/answ_20100602.gif","shortTitle":"Answers","detailUrl":"http:\/\/it.answers.yahoo.com\/","chromecolor":"blue"},"state":{"defer":false,"collapsed":0},"prefs":{"isc":0,"_mc":0},"suid":"25021325"},{"props":{"cpos":3,"id":"u_21445696","type":"ycw","ns":"type_ycw","contentId":"21445696","tags":[],"title":"Attivit\u00e0","icon":"http:\/\/d.yimg.com\/a\/i\/ww\/met\/pa_icons_18\/update_20100602.gif","shortTitle":"Attivit\u00e0","detailUrl":"http:\/\/profiles.yahoo.com\/updates\/","chromecolor":"violet"},"state":{"defer":false,"collapsed":0},"prefs":{"isc":0,"_mc":0},"suid":"21445696"},{"props":{"cpos":4,"id":"u_25021272","type":"feed","ns":"type_feed","contentId":"25021272","tags":[],"title":"Auto","icon":"http:\/\/d.yimg.com\/a\/i\/ww\/met\/pa_icons_18\/autos_20100602.gif","shortTitle":"Auto","detailUrl":"http:\/\/it.cars.yahoo.com\/","chromecolor":"violet"},"state":{"defer":false,"collapsed":0},"prefs":{"isc":0,"_mc":0},"suid":"25021272"},{"props":{"cpos":5,"id":"u_63826","type":"movies","ns":"type_movies","contentId":"63826","tags":[],"title":"Cinema","icon":"http:\/\/d.yimg.com\/a\/i\/ww\/met\/pa_icons_18\/movies_20100602.gif","shortTitle":"Cinema","detailUrl":"http:\/\/it.movies.yahoo.com\/","chromecolor":"violet"},"state":{"defer":false,"collapsed":0},"prefs":{"isc":0,"_mc":0},"suid":"63826"},{"props":{"cpos":6,"id":"u_93109","type":"finance","ns":"type_finance","contentId":"93109","tags":[],"title":"Finanza","icon":"http:\/\/d.yimg.com\/a\/i\/ww\/met\/pa_icons_18\/fin_20100602.gif","shortTitle":"Finanza","detailUrl":"http:\/\/it.finance.yahoo.com\/","chromecolor":"violet","refHandler":"cfg.maple_dali.handler.refresh"},"state":{"defer":false,"collapsed":0,"view":"paVitals"},"prefs":{"isc":0,"_mc":0},"suid":"93109","res":[]},{"props":{"cpos":7,"id":"u_14682031","type":"fpflickr","ns":"type_fpflickr","contentId":"14682031","tags":[],"title":"Flickr","icon":"http:\/\/d.yimg.com\/a\/i\/ww\/met\/pa_icons_18\/flickr_20100602.gif","shortTitle":"Flickr","detailUrl":"http:\/\/www.flickr.com\/","chromecolor":"gray"},"state":{"defer":false,"collapsed":0},"prefs":{"isc":0,"_mc":0},"suid":"14682031"},{"props":{"cpos":8,"id":"u_25021266","type":"autoapp","ns":"type_autoapp","contentId":"25021266","tags":[],"title":"Giochi","icon":"http:\/\/d.yimg.com\/a\/i\/ww\/met\/pa_icons_18\/games_20100602.gif","shortTitle":"Giochi","detailUrl":"http:\/\/it.games.yahoo.com\/","chromecolor":"violet"},"state":{"defer":false,"collapsed":0},"prefs":{"isc":0,"_mc":0},"suid":"25021266"},{"props":{"trusted":true,"cpos":9,"id":"u_25021296","type":"yap","ns":"type_yap","contentId":"25021296","tags":[],"title":"Incontri","icon":"http:\/\/d.yimg.com\/a\/i\/ww\/met\/pa_icons_18\/personals_20100602.gif","yapid":"2v6G6v30","shortTitle":"Incontri","detailUrl":"http:\/\/it.meetic.yahoo.net\/index.php?mtcmk=049801","chromecolor":"violet"},"state":{"defer":false,"collapsed":0},"prefs":{"isc":0,"_mc":0},"suid":"25021296"},{"props":{"cpos":10,"id":"u_25967225","type":"feed","ns":"type_feed","contentId":"25967225","tags":[],"title":"Kelkoo","icon":"http:\/\/d.yimg.com\/a\/i\/ww\/met\/pa_icons_18\/kelkoo_20100602.gif","shortTitle":"Kelkoo","detailUrl":"http:\/\/www.kelkoo.it\/c-601-home-page.html?partnerId=96922897","chromecolor":"blue"},"state":{"defer":false,"collapsed":0},"prefs":{"isc":0,"_mc":0},"suid":"25967225"},{"props":{"cpos":11,"id":"u_8298348","type":"messenger","ns":"type_messenger","contentId":"8298348","tags":[],"title":"Messenger","icon":"http:\/\/d.yimg.com\/a\/i\/ww\/met\/pa_icons_18\/mess_20100602.gif","shortTitle":"Messenger","detailUrl":"http:\/\/it.messenger.yahoo.com\/","chromecolor":"violet"},"state":{"defer":false,"collapsed":0},"prefs":{"isc":0,"_mc":0},"suid":"8298348"},{"props":{"locationBased":true,"cpos":12,"id":"u_63794","type":"weather","ns":"type_weather","contentId":"63794","tags":[],"title":"Meteo","icon":"http:\/\/d.yimg.com\/a\/i\/ww\/met\/pa_icons_18\/weather_20100602.gif","shortTitle":"Meteo","detailUrl":"http:\/\/it.weather.yahoo.com\/","chromecolor":"violet"},"state":{"defer":false,"collapsed":0},"prefs":{"isc":0,"_mc":0},"suid":"63794"},{"props":{"cpos":13,"id":"u_25021311","type":"feed","ns":"type_feed","contentId":"25021311","tags":[],"title":"Musica","icon":"http:\/\/d.yimg.com\/a\/i\/ww\/met\/pa_icons_18\/music_20100602.gif","shortTitle":"Musica","detailUrl":"http:\/\/it.music.yahoo.com\/","chromecolor":"blue"},"state":{"defer":false,"collapsed":0},"prefs":{"isc":0,"_mc":0},"suid":"25021311"},{"props":{"cpos":14,"id":"u_17986569","type":"scoreboard","ns":"type_scoreboard","contentId":"17986569","tags":[],"title":"Sport","icon":"http:\/\/d.yimg.com\/a\/i\/ww\/met\/pa_icons_18\/sport_intl_20100602.gif","shortTitle":"Sport","detailUrl":"http:\/\/it.eurosport.yahoo.com\/","chromecolor":"violet"},"state":{"defer":false,"collapsed":0},"prefs":{"isc":0,"_mc":0},"suid":"17986569"},{"props":{"cpos":15,"id":"u_25021267","type":"feed","ns":"type_feed","contentId":"25021267","tags":[],"title":"Viaggi","icon":"http:\/\/d.yimg.com\/a\/i\/ww\/met\/pa_icons_18\/travel_20100602.gif","shortTitle":"Viaggi","detailUrl":"http:\/\/it.viaggi.yahoo.com\/","chromecolor":"blue"},"state":{"defer":false,"collapsed":0},"prefs":{"isc":0,"_mc":0},"suid":"25021267"},{"props":{"cpos":16,"id":"u_22927225","type":"facebook","ns":"type_facebook","contentId":"22927225","tags":[],"title":"Facebook","icon":"http:\/\/d.yimg.com\/a\/i\/ww\/met\/pa_icons_18\/face_20100602.gif","shortTitle":"Facebook","detailUrl":"http:\/\/www.facebook.com","chromecolor":"royalblue"},"state":{"defer":false,"collapsed":0},"prefs":{"isc":0,"_mc":0},"suid":"22927225"},{"props":{"cpos":17,"id":"u_30344922","type":"feed","ns":"type_feed","contentId":"30344922","tags":[],"title":"Repubblica.it","icon":"http:\/\/d.yimg.com\/a\/i\/ww\/met\/pa_icons_18\/republica_20100602.gif","shortTitle":"Repubblica.it","detailUrl":"http:\/\/www.repubblica.it\/","chromecolor":"blue"},"state":{"defer":false,"collapsed":0},"prefs":{"isc":0,"_mc":0},"suid":"30344922"},{"props":{"cpos":18,"id":"u_30344680","type":"feed","ns":"type_feed","contentId":"30344680","tags":[],"title":"Il Sole 24 ORE","icon":"http:\/\/d.yimg.com\/a\/i\/ww\/met\/pa_icons_18\/24ore_20100602.gif","shortTitle":"Il Sole 24 ORE","detailUrl":"http:\/\/www.ilsole24ore.com\/","chromecolor":"blue"},"state":{"defer":false,"collapsed":0},"prefs":{"isc":0,"_mc":0},"suid":"30344680"},{"props":{"cpos":1,"id":"u_25967726","type":"autoapp","ns":"type_autoapp","contentId":"25967726","tags":[],"title":"Traduttore","icon":"http:\/\/d.yimg.com\/a\/i\/ww\/met\/pa_icons_18\/babel_20100602.gif","shortTitle":"Traduttore","detailUrl":"http:\/\/it.babelfish.yahoo.com\/","chromecolor":"blue"},"state":{"defer":false,"collapsed":0},"prefs":{"isc":0,"_mc":0},"suid":"25967726"},{"props":{"cpos":2,"id":"u_63802","type":"horoscope","ns":"type_horoscope","contentId":"63802","tags":[],"title":"Oroscopo","icon":"http:\/\/d.yimg.com\/a\/i\/ww\/met\/pa_icons_18\/horo_20100602.gif","shortTitle":"Oroscopo","detailUrl":"http:\/\/it.horoscope.yahoo.com\/","chromecolor":"blue"},"state":{"defer":false,"collapsed":0},"prefs":{"isc":0,"_mc":0},"suid":"63802"},{"props":{"cpos":3,"id":"u_25021265","type":"autoapp","ns":"type_autoapp","contentId":"25021265","tags":[],"title":"Mio Yahoo!","icon":"http:\/\/d.yimg.com\/a\/i\/ww\/met\/pa_icons_18\/myyahoo_20100602.gif","shortTitle":"Mio Yahoo!","detailUrl":"http:\/\/it.my.yahoo.com\/","chromecolor":"blue"},"state":{"defer":false,"collapsed":0},"prefs":{"isc":0,"_mc":0},"suid":"25021265"}],"editSignInUrl":"https:\/\/login.yahoo.com\/config\/login?.src=fpctx&.intl=it&.done=http%3A%2F%2Fit.yahoo.com%2F&.pd=c%3D6T7evjap2e6CwWSb86QVdqk-","oopsBtnDefault":"<p class=\"oops\"><button class=\"cta-btn pa-mod-err-ok\">OK<\/button><\/p>","loadingMsgDefault":"<span class=\"pa-loading loading-spinner\">Caricamento...<\/span>","loadingSpinner":"<span class=\"loading-spinner\"><\/span>","errorMsgDefault":"        <a href=\"#\" id=\"u_2588582-mod-err-close\" class=\"y-glbl-universal hide-textindent pa-mod-err-close\">Chiudi<\/a>\n        <div id=\"u_2588582-mod-err-msg\" class=\"pa-mod-err-msg \">\n                        <div class=\"oops-msg\" role=\"alertdialog\">\n                <span class=\"icon icon-error iconpos y-glbl-universal\"><\/span>\n                <h3 class=\"oops\">Le impostazioni dell'applicazione al momento non sono disponibili.<\/h3>\n                <p class=\"oops\">Riprova pi\u00f9 tardi.<\/p>\n            <\/div>\n            <p class=\"oops\"><button id=\"u_2588582-mod-err-ok\" class=\"cta-btn pa-mod-err-ok\">OK<\/button><\/p>\n        <\/div>","detachedPointerHtml":"<div id=\"u_2588582-ptr\" class=\"ptr y-ln-3 y-bg-3\"><button class=\"do-open-mod y-fp-pg-controls\"><\/button><span class=\"ptr-cort y-fp-pg-controls\"><\/span><span class=\"ptr-corb y-fp-pg-controls\"><\/span><\/div>","quickViewHtml":"        <div id=\"u_2588582-qv\" class=\"qv y-ln-2\">\n            <span class=\"inner y-fp-pg-grad\">\n                <span class=\"cort y-fp-pg-controls\"><\/span>\n                <span class=\"corb y-fp-pg-controls\"><\/span>\n                <button class=\"do-qv btna y-fp-pg-controls small\">&nbsp;<\/button><button class=\"do-qv btnb small y-fp-pg-grad y-txt-5\">Apri anteprima<\/button>\n            <\/span>\n        <\/div>","userlist_max":39,"f-generic-msg":"Impossibile aggiungere preferiti adesso - riprova pi\u00f9 tardi.","flashErrHtml":"            <span class=\"bg y-fp-pg-grad\"><\/span>\n            <div class=\"hd clearfix\">\n                <button class=\"do-flash-close y-ln-2 y-fp-pg-controls hide-textindent\">Chiudi<\/button>\n            <\/div>\n            <div class=\"bd clearfix\">\n                <span class=\"icon y-glbl-universal\"><\/span>\n                <div class=\"msg med-small y-txt-1\">{html}<\/div>\n            <\/div>\n            <div class=\"ft\">\n                <button class=\"do-flash-close cta-btn med-small\">OK<\/button>\n            <\/div>","dragdropBeacon":"http:\/\/www.yahoo.com","fillerBtns":1,"promolist":[{"data":{"adlocs":"ql1"},"props":{"cpos":1,"id":"u_16726958","type":"adspabutton","ns":"type_adspabutton","contentId":"16726958","tags":[],"title":"Adserved Quicklinks - QL1","icon":"","shortTitle":"Adserved Quicklinks - QL1","detailUrl":"","chromecolor":"blue"},"state":{"defer":false,"collapsed":0},"prefs":{"isc":0,"_mc":0},"suid":"16726958"}]},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"u_2588582","ns":"type_pa","trusted":true,"type":"pa","contentId":"2588582","tags":[],"title":"","icon":"","shortTitle":"","detailUrl":"","chromecolor":"blue"},"state":{"view":"default","defer":false,"collapsed":0},"strs":{"pacontainerHtml":"<div class=\"pa-app-col1 y-pa-ln-open-dk \"><div class=\"hd\"><h2 class=\"med-small\">{title}<\/h2><\/div>{html}<\/div>","pacloseHtml":"Chiudi {title}","STR.PA.DISCLAIMER":"<div class=\"pa-mod-disc small\"><h6><a role=\"button\" href=\"#disclaimer\" oncontextmenu=\"return false\" class=\"pa-mod-show-disc\">Avviso<\/a><\/h6><p tabindex=\"0\">Questo contenuto potrebbe provenire da siti web esterni e potrebbe non essere conforme alle tue leggi. Sei completamente responsabile dell'accesso e dell'uso di questa applicazione e del contenuto.<\/p><\/div>","STR.OK":"OK","STR.PA.ACCESSIBILITY.LOADING":"Caricamento di {title}","STR.PA.ACCESSIBILITY.LOADED":"{title} caricato","STR.PA.TIMEOUT":"            <div class=\"oops-msg\" role=\"alertdialog\">\n                <span class=\"icon icon-error iconpos y-glbl-universal\"><\/span>\n                <h3 class=\"oops\"><span class=\"y-txt-1 med-small\">Impossibile collegarsi alla pagina iniziale Yahoo!. Riprova.<\/span><\/h3>\n                \n            <\/div>\n            <p class=\"oops\"><\/p>","STR.TRY_AGAIN":"Riprova","STR.PA.TIMEOUT.POPUP":"            <div class=\"oops-msg\" role=\"alertdialog\">\n                <span class=\"icon icon-error iconpos y-glbl-universal\"><\/span>\n                <h3 class=\"oops\">Non \u00e8 stato possibile salvare le modifiche.<\/h3>\n                <p class=\"oops\">Riprova pi\u00f9 tardi.<\/p>\n            <\/div>\n            <p class=\"oops\"><button data-b=\"http:\/\/www.yahoo.com\"class=\"cta-btn pa-mod-err-ok\">OK<\/button><\/p>","EDIT.SIGNIN":"                <div class=\"edit-err-signin\">\n                                <div class=\"oops-msg\" role=\"alertdialog\">\n                <span class=\"icon icon-error iconpos y-glbl-universal\"><\/span>\n                <h3 class=\"oops\"><span class=\"med-small y-txt-1\">{title}<\/span><\/h3>\n                \n            <\/div>\n            <p class=\"oops\"><a href=\"{signInUrl}\" class=\"cta-btn medium\">Entra<\/a><button class=\"cancel-btn med-small pa-mod-err-cancel\" data-b=\"http:\/\/www.yahoo.com\">Annulla<\/button><\/p>\n                    <p class=\"edit-err-signin-ft small y-txt-1 y-ln-2\"><span class=\"strong\">Non hai un'ID Yahoo!?<\/span> Registrarsi \u00e8 semplice. <a href=\"https:\/\/edit.yahoo.com\/registration?.src=fpctx&.intl=it&.done=http%3A%2F%2Fit.yahoo.com%2F\">Registrati<\/a>.<\/p>\n                <\/div>","EDIT.SIGNIN.Y":"Entra per riordinare o rimuovere siti Yahoo!","EDIT.SIGNIN.U":"Entra per riordinare o modificare i tuoi preferiti","editInstr":"Clicca su un pulsante e trascinalo per spostarlo in una nuova posizione\nIn alternativa, riordina i pulsanti usando la tastiera:\nPremi il tasto TAB per evidenziare un pulsante\nPremi la BARRA SPAZIATRICE per selezionare il link\nSposta il link in su o in gi\u00f9 usando i tasti freccia\nPremi di nuovo la BARRA SPAZIATRICE per completare lo spostamento","ariaMoving":"Spostamento di %s...","ariaMoveComplete":"Spostamento completato","ariaMoveAfter":"Sposta dopo %s","ariaAtStart":"Raggiunto l'inizio dell'elenco","ariaAtEnd":"Raggiunta la fine dell'elenco","DIALOG":"        <div class=\"{className} pa-add y-bg-3 y-ln-4 clearfix\">\n            <div class=\"pa-add-hd y-fp-pg-grad\">\n                {title}\n                <button class=\"do-close y-ln-4 y-fp-pg-controls hide-textindent\" data-b=\"http:\/\/www.yahoo.com\">Chiudi<\/button>\n            <\/div>\n            <div class=\"pa-add-bd\">{body}<\/div>\n            <div class=\"pa-add-ft y-ln-2\">\n                <p class=\"small y-txt-2\">Spazi a disposizione: <span id=\"u_2588582-slots-left\">0<\/span><\/p>\n                <button class=\"do-done cta-btn-ext\" data-b=\"http:\/\/www.yahoo.com\">Ho finito<\/button>\n            <\/div>\n        <\/div>","ADD.Y":"            <h2 class=\"med-small y-txt-5\">Aggiungi siti Yahoo!<\/h2>\n            <p class=\"small y-txt-5\">Clicca qui sotto per aggiungere altri tra i tuoi siti Yahoo! preferiti<\/p>","ADD.FAV":"            <h2 class=\"med-small y-txt-5\">Aggiungi i tuoi siti preferiti<\/h2>","EDIT.ERR":"            <div class=\"edit-err y-bg-3 y-ln-3\">\n                <div class=\"edit-err-hd clearfix\">\n                    <button data-b=\"http:\/\/www.yahoo.com\" class=\"do-err-close y-ln-2 y-fp-pg-controls hide-textindent\">Chiudi<\/button>\n                <\/div>\n                <div class=\"edit-err-bd\"><\/div>\n            <\/div>","STR.PA.VITALS":"            <span class=\"vital small\" aria-labelledby=\"pa-u_2588582-lbl\">({data})<\/span>\t "},"res":{}},{"data":{"maple":{"platform":{},"module":"p_26391799","instance":"p_26391799","ba":{"_id":"p_26391799","chrome":"1"},"signature":"bmPE5Mw__TTnlsPp5reaLw--"}},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"p_26391799","ns":"type_breakingnews","type":"breakingnews","contentId":"26391799","tags":[],"title":"Breaking News","icon":"","detailUrl":""},"state":{"collapsed":0,"view":"default","defer":false},"strs":{},"res":{}},{"data":{"maple":{"platform":{},"module":"p_13872472","instance":"p_13872472","ba":{"_id":"p_13872472","chrome":"1"},"signature":"Ka2Mo7Vca0WlAWnAOVmr0A--"},"today_delay_mouseover":"100","footer.anim.mode":"none","showdate":true,"cokeTestId":"","dummyYLT":"","headerImageSrc":"http:\/\/l.yimg.com\/i\/i\/it\/hp\/jessi32.jpg","headerImageAlt":"Jessica Biel (Kika)","todaytop":"1","textCount":"{0} di {1}","pkgIds":["id-5527","id-5538","id-5516","id-5539","id-5543","id-5534","id-5524","id-5547","id-5549","id-5545","id-5542","id-5536","id-5541","id-5532","id-5540","id-5550","id-5535","id-5546","id-5544","id-5548"],"clipId":"","channelNodeId":"","storyId":"id-5527","centerStory":0,"paginationtype":"package"},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"p_13872472","ns":"type_fptoday","trusted":true,"type":"fptoday","contentId":"13872472","tags":[],"title":"Today","icon":"","shortTitle":"Today","detailUrl":"","chromecolor":"blue"},"state":{"view":"default","defer":false,"collapsed":0},"strs":{"VIDEO_PLAYER":"<h2 class=\"title-date\"><span class=\"title y-txt-modhdr medium\" style=\"font-family: inherit;\">OGGI<\/span><span class=\"date y-txt-2 medium\" style=\"font-family: inherit;\"> - 31 luglio 2010<\/span><\/h2>\n<div class=\"video-header clearfix\">\n    <h2 class=\"video-title medium\">{_title_}<\/h2> \n    <a href=\"#\" class=\"close\">\n        <span class=\"close-label small\">Chiudi video<\/span>\n        <span class=\"y-fp-pg-controls-nt close-img\"><\/span>\n    <\/a>\n<\/div>\n<div class=\"video-package\">\n        <object id=\"swftodayvideo\" class=\"inline-video\" classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" type=\"application\/x-shockwave-flash\" width=\"100%\" height=\"221\" codebase=\"http:\/\/www.macromedia.com\/shockwave\/download\/index.cgi?P1_Prod_Version=ShockwaveFlash\">\n        <param name=\"movie\" value=\"http:\/\/d.yimg.com\/nl\/frontpage\/site\/player.swf\">\n        <param name=\"quality\" value=\"autohigh\">\n        <param name=\"loop\" value=\"false\">\n        <param name=\"menu\" value=\"false\">\n        <param name=\"wmode\" value=\"opaque\">\n        <param name=\"allowscriptaccess\" value=\"always\">\n        <param name=\"allowFullScreen\" value=\"true\">\n        <param name=\"bgcolor\" value=\"#000000\">\n        <param id=\"swftodayvideo_flashvar\" name=\"flashvars\" value=\"vid={_clipId_}&amp;autoPlay=1&amp;eventHandler=yepHandler&amp;lang=it-IT&amp;intl=it&amp;shareUrl=cosmos.bcst.yahoo.com\/scp_v3\/viewer\/share_upv2.php&amp;playlistId={_channelNodeId_}&amp;browseCarouselUI=hide&amp;pageSpaceId=2142153755&amp;playerSpaceId=2142153755&amp;yltParam=&amp;rd=it.yahoo.com\">\n        <embed width=\"100%\" height=\"221\" flashvars=\"vid={_clipId_}&amp;autoPlay=1&amp;eventHandler=yepHandler&amp;lang=it-IT&amp;intl=it&amp;shareUrl=cosmos.bcst.yahoo.com\/scp_v3\/viewer\/share_upv2.php&amp;playlistId={_channelNodeId_}&amp;browseCarouselUI=hide&amp;pageSpaceId=2142153755&amp;playerSpaceId=2142153755&amp;yltParam=&amp;rd=it.yahoo.com\" allowscriptaccess=\"always\" allowFullScreen=\"true\" bgcolor=\"#000000\" wmode=\"opaque\" pluginspage=\"http:\/\/www.macromedia.com\/shockwave\/download\/index.cgi?P1_Prod_Version=ShockwaveFlash\" type=\"application\/x-shockwave-flash\" quality=\"autohigh\" menu=\"false\" loop=\"false\" src=\"http:\/\/d.yimg.com\/nl\/frontpage\/site\/player.swf\" name=\"swftodayvideo\" class=\"inline-video\"><\/embed>\n    <\/object>\n<\/div>"},"res":{}},{"data":{"maple":{"platform":{},"module":"p_13923988","instance":"p_13923988","ba":{"_id":"p_13923988","chrome":"1"},"signature":"nANKimkAEyRB2oL6.N3WvA--"}},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"p_13923988","ns":"type_news","type":"news","contentId":"13923988","tags":[],"title":"News","icon":"","shortTitle":"News","detailUrl":"","chromecolor":"blue"},"state":{"view":"default","defer":false,"collapsed":0},"strs":{"LOADING":" <div class=\"loading-spinner y-txt-2 loading\">Caricamento...<\/div>"},"res":{}},{"data":{"maple":{"platform":{},"module":"p_21445691","instance":"p_21445691","signature":"5INo.t_DN9931_ChiWUsmw--"},"default_quote_text":"Inserisci codice azione"},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"p_21445691","ns":"type_marketindices","type":"marketindices","contentId":"21445691","tags":[],"title":"Market Indices & Scottrade Ad","icon":"","detailUrl":""},"state":{"collapsed":0,"view":"default","defer":false},"strs":{},"res":{},"mods":[{"data":{"maple":{"platform":{},"module":"u_24813756","instance":"__mmh_0","ba":{"_action":"show","chrome":true,"_container":true,"_id":"u_24813756"},"signature":"RKFtCVfxHieSW_uj36CaiQ--"},"adlocs":"stck","def":1,"data":{"intl":"it","f":"2142153755","p":"yahoo","l":"STCK","t":"1.5","mid":"u_24813756","bkt":"bkt709"},"fallback":"<div class=\"stck stck-reserve\"><!-- metro normal ad --><!-- metro fallback ad cms --><!-- --><\/div><!-- split -->"},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"u_24813756","ns":"type_ads","trusted":true,"type":"ads","contentId":"24813756","tags":[],"title":"stck ad","icon":"","shortTitle":"stck ad","detailUrl":"","chromecolor":"blue"},"state":{"view":"default","defer":false,"collapsed":0},"strs":{},"res":{}}]},{"data":{"maple":{"platform":{},"module":"p_22934726","instance":"p_22934726","ba":{"_id":"p_22934726","chrome":"1"},"signature":"COgfdJ2mqgW2WSKaeWOmzg--"},"beacon":["http:\/\/www.yahoo.com","http:\/\/www.yahoo.com"],"mods":[{"state":{"view":"default","defer":false,"collapsed":0},"props":{"id":"p_17416020_be9","type":"contentcarouselTopten","ns":"type_contentcarouselTopten","contentId":"17416020","tags":[],"title":"Content Carousel Module: Top Ten Searches Module","icon":"","shortTitle":"Content Carousel Module: Top Ten Searches Module","detailUrl":"","chromecolor":"blue"},"prefs":{"isc":0,"_mc":0}}],"metadata":[{"carouselPackageTitleText":"Search","carouselPackageTitleLinkURL":"http:\/\/it.search.yahoo.com\/","carouselPackageHeadline":"Trend del giorno","scid":"0199-4bdab213dcf9205f5442d445c8a2da6e-0032","carouselPackageTemplateTypeName":"Topten","carouselPackagePageCount":"1 di 1"}],"pos":"3","loading":"<p class=\"loading loading-spinner\">Caricamento...<\/p>","emptyitem":"<li class=\"y-panel\">&nbsp;<\/li>","nav":"        <div class=\"y-nav y-bg-2 y-ln-1 clearfix\">            <div class=\"y-nav-count y-txt-2 small\">1 di 1<\/div>            <div class=\"y-nav-buttons\">\n                <a class=\"prev\" href=\"#\">\n                    <span class=\"y-fp-pg-grad y-ln-1 btn\">\n                        <span class=\"y-fp-pg-controls hide-textindent\">Indietro<\/span>\n                    <\/span>\n                <\/a>\n                <a class=\"next\" href=\"#\">\n                    <span class=\"y-fp-pg-grad y-ln-1 btn\">\n                        <span class=\"y-fp-pg-controls hide-textindent\">Avanti<\/span>\n                    <\/span>\n                <\/a>\n            <\/div>        <\/div>"},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"p_22934726","ns":"type_contentcarousel","trusted":true,"type":"contentcarousel","contentId":"22934726","tags":[],"title":"Content Carousel - Top Searches","icon":"","shortTitle":"Content Carousel - Top Searches","detailUrl":"","chromecolor":"blue"},"state":{"view":"default","defer":false,"collapsed":0},"strs":{"STR.CONTENTCAROUSEL.NEXT":"Avanti","STR.CONTENTCAROUSEL.PREV":"Indietro"},"res":{}},{"data":{"maple":{"platform":{},"module":"p_13923486","instance":"p_13923486","ba":{"_id":"p_13923486","chrome":"1"},"signature":"u0KwSyszg.3EC21CoTopzw--"},"adlocs":"fpad","def":1,"data":{"intl":"it","f":"2142153755","p":"yahoo","l":"FPAD","t":"1.5","mid":"p_13923486","bkt":"bkt709"},"fallback":"<div class=\"fpad fpad-reserve\"><!-- metro normal ad --><!-- metro fallback ad cms --><div style=\"color: rgb(0, 0, 0); font-size: 12px; font-family: Verdana,arial,sans-serif; font-weight: bold; text-align: center;\"> <a href=\" http:\/\/downloads.yahoo.com\/it\/internetexplorer\/ \"><img src=\"http:\/\/ads.yimg.com\/ev\/eu\/any\/metro\/300x250ie8it.gif\" alt=\"SCARICATO SUBITO\" width=\"300\" height=\"250\" border=\"0\"><\/a> <\/div><\/div><!-- split -->"},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"p_13923486","ns":"type_ads","trusted":true,"type":"ads","contentId":"13923486","tags":[],"title":"FP ADs","icon":"","shortTitle":"FP ADs","detailUrl":"","chromecolor":"blue"},"state":{"view":"default","defer":false,"collapsed":0},"strs":{},"res":{}},{"props":{"id":"p_27859422","ns":"p_27859422","trusted":true,"refHandler":"cfg.maple_dali.handler.refresh"},"state":{},"strs":{},"res":{},"data":{"maple":{"platform":{}}},"mods":[{"data":{"maple":{"platform":{},"module":"u_28285431","instance":"__mmh_0","ba":{"_action":"show","chrome":true,"_container":true,"_id":"u_28285431"},"signature":"QXnx5Q1hjViQi7WgwpEI9g--"},"adlocs":"prom1","def":1,"data":{"intl":"it","f":"2142153755","p":"yahoo","l":"PROM1","t":"1.5","mid":"u_28285431","bkt":"bkt709"},"fallback":"<div class=\"prom1 prom1-reserve\"><!-- metro normal ad --><!-- metro fallback ad cms --><div class=\"ins_prom\">\n\n\t<div style=\"float:left;padding:2px 3px 0 0;\"><A href=\"http:\/\/it.mobile.yahoo.com\/\" target=\"_blank\"><img src=\"http:\/\/ads.yimg.com\/ev\/eu\/any\/prom\/mobile.gif\" border=\"0\" width=\"50\" height=\"50\"><\/a><\/div>\n\n\t<div class=\"small\" style=\"line-height:1.4em;\">\n\n\t<a href=\"http:\/\/it.mobile.yahoo.com\/\" target=\"_blank\">\n\n\t<b>Yahoo! Mobile<\/b><br>\n\t<span style=\"color:#666;\">Yahoo! Mail sul tuo cellulare<\/span><\/a>\n\t<\/div>\n\n\t<div style=\"clear:both;\"><\/div>\n\n<\/div><\/div><!-- split -->"},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"u_28285431","ns":"type_ads","trusted":true,"type":"ads","contentId":"28285431","tags":[],"title":"Mod Promo Ads","icon":"","shortTitle":"Mod Promo Ads","detailUrl":"","chromecolor":"blue"},"state":{"view":"default","defer":false,"collapsed":0},"strs":{},"res":{}},{"data":{"maple":{"platform":{},"module":"u_30344737","instance":"__mmh_1","ba":{"_action":"show","chrome":true,"_container":true,"_id":"u_30344737"},"signature":"Xemc7M5xck03zWn2lcHxXw--"},"adlocs":"prom2","def":1,"data":{"intl":"it","f":"2142153755","p":"yahoo","l":"PROM2","t":"1.5","mid":"u_30344737","bkt":"bkt709"},"fallback":"<div class=\"prom2 prom2-reserve\"><!-- metro normal ad --><!-- metro fallback ad cms --><div class=\"ins_prom\">\n\n\t<div style=\"float:left;padding:2px 3px 0 0;\"><A href=\"http:\/\/it.viaggi.yahoo.com\/\" target=\"_blank\"><img src=\"http:\/\/l.yimg.com\/i\/i\/it\/tr\/botto.jpg\" border=\"0\" width=\"50\" height=\"50\"><\/a><\/div>\n\n\t<div class=\"small\" style=\"line-height:1.4em;\">\n\n\t<a href=\"http:\/\/it.viaggi.yahoo.com\/\" target=\"_blank\">\n\n\t<b>Yahoo! Viaggi<\/b><br>\n\t<span style=\"color:#666;\">Vacanze al top? Cerca le offerte di Expedia<\/span><\/a>\n\t<\/div>\n\n\t<div style=\"clear:both;\"><\/div>\n\n<\/div><\/div><!-- split -->"},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"u_30344737","ns":"type_ads","trusted":true,"type":"ads","contentId":"30344737","tags":[],"title":"Mod Promo Ads","icon":"","shortTitle":"Mod Promo Ads","detailUrl":"","chromecolor":"blue"},"state":{"view":"default","defer":false,"collapsed":0},"strs":{},"res":{}}]},{"data":{"maple":{"platform":{},"module":"p_17335519","instance":"p_17335519","ba":{"_id":"p_17335519","chrome":"1"},"signature":"lInAmYyIY6MLJb2FdjyUJQ--"},"beacon":["http:\/\/www.yahoo.com","http:\/\/www.yahoo.com"],"mods":[{"state":{"view":"default","defer":false,"collapsed":0},"props":{"id":"p_30344833_e6a","type":"contentcarouselslideshow1","ns":"type_contentcarouselslideshow1","contentId":"30344833","tags":[],"title":"Content Carousel Module: Image\/Video gallery","icon":"","shortTitle":"Content Carousel Module: Image\/Video gallery","detailUrl":"","chromecolor":"blue"},"prefs":{"isc":0,"_mc":0}}],"metadata":[{"carouselPackageTitleText":"Homepage","carouselPackageTitleLinkURL":"http:\/\/it.speciali.yahoo.com\/latuahomepage\/","carouselPackageHeadline":"Applicazioni per tutti i gusti!","scid":"0199-c6cbd1324f020407f4ef9688fdc3523a-0064","carouselPackageTemplateTypeName":"4Gallery","carouselPackagePageCount":"1 di 4"},{"carouselPackageTitleText":"Search","carouselPackageTitleLinkURL":"http:\/\/it.search.yahoo.com\/","carouselPackageHeadline":"Le protagoniste dell&#39;estate","scid":"0199-64c9e0d542b1f6ffb859033d5d3acea2-001e","carouselPackageTemplateTypeName":"4Gallery","carouselPackagePageCount":"2 di 4"},{"carouselPackageTitleText":"","carouselPackageHeadline":"Stai pensando di cambiar casa?","scid":"0199-a94a640bdea50eaadc624bf2426ffe76-0032","carouselPackageTemplateTypeName":"Slide1","carouselPackagePageCount":"3 di 4"},{"carouselPackageTitleText":"Eurosport","carouselPackageTitleLinkURL":"http:\/\/it.eurosport.yahoo.com\/","carouselPackageHeadline":"Pronti per ripartire con la Serie A?","scid":"0199-82c1c51f338558c9954be5014cdee526-0032","carouselPackageTemplateTypeName":"2Thumbnail","carouselPackagePageCount":"4 di 4"}],"pos":"4","loading":"<p class=\"loading loading-spinner\">Caricamento...<\/p>","emptyitem":"<li class=\"y-panel\">&nbsp;<\/li>","nav":"        <div class=\"y-nav y-bg-2 y-ln-1 clearfix\">            <div class=\"y-nav-count y-txt-2 small\">1 di 4<\/div>            <div class=\"y-nav-buttons\">\n                <a class=\"prev\" href=\"#\">\n                    <span class=\"y-fp-pg-grad y-ln-1 btn\">\n                        <span class=\"y-fp-pg-controls hide-textindent\">Indietro<\/span>\n                    <\/span>\n                <\/a>\n                <a class=\"next\" href=\"#\">\n                    <span class=\"y-fp-pg-grad y-ln-1 btn\">\n                        <span class=\"y-fp-pg-controls hide-textindent\">Avanti<\/span>\n                    <\/span>\n                <\/a>\n            <\/div>        <\/div>"},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"p_17335519","ns":"type_contentcarousel","trusted":true,"type":"contentcarousel","contentId":"17335519","tags":[],"title":"Content Carousel - main instance","icon":"","shortTitle":"Content Carousel - main instance","detailUrl":"","chromecolor":"blue"},"state":{"view":"default","defer":false,"collapsed":0},"strs":{"STR.CONTENTCAROUSEL.NEXT":"Avanti","STR.CONTENTCAROUSEL.PREV":"Indietro"},"res":{}},{"data":{"maple":{"platform":{},"module":"p_13848969","instance":"p_13848969","ba":{"_id":"p_13848969","chrome":"1"},"signature":"Yn3QUUcmHHqzpYYYD_UDHw--"}},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"p_13848969","ns":"type_footer","type":"footer","contentId":"13848969","tags":[],"title":"Footer","icon":"","detailUrl":""},"state":{"collapsed":0,"view":"default","defer":false},"strs":{},"res":{}},{"data":{"maple":{"platform":{},"module":"p_30345316","instance":"p_30345316","ba":{"_id":"p_30345316","chrome":"1"},"signature":"xPBNZkRaBs4xmKm_bkWIlg--"}},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"p_30345316","ns":"type_batchload","trusted":true,"type":"batchload","contentId":"30345316","tags":[],"title":"","icon":"","shortTitle":"","detailUrl":"","chromecolor":"blue"},"state":{"defer":false,"collapsed":0},"strs":{},"res":{}},{"data":{"maple":{"platform":{},"module":"p_24803755","instance":"p_24803755","signature":"jQhurS9RkNqsOs1v9PItow--"}},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"p_24803755","ns":"type_subfooter","type":"subfooter","contentId":"24803755","tags":[],"title":"Subfooter","icon":"","detailUrl":""},"state":{"collapsed":0,"view":"default","defer":false},"strs":{},"res":{},"mods":[{"data":{"maple":{"platform":{},"module":"u_26391831","instance":"__mmh_0","ba":{"_action":"show","chrome":true,"_container":true,"_id":"u_26391831"},"signature":"kZd6iy.hXHo2k5MbnE2fgg--"},"adlocs":"adbcn","def":1,"data":{"intl":"it","f":"2142153755","p":"yahoo","l":"ADBCN","t":"1.5","mid":"u_26391831","bkt":"bkt709"},"fallback":"<div class=\"adbcn adbcn-reserve\"><!-- metro normal ad --><!-- metro fallback ad static --><!--ADBCN-->\n<\/div><!-- split -->"},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"u_26391831","ns":"type_ads","trusted":true,"type":"ads","contentId":"26391831","tags":[],"title":"FP Yieldmanager","icon":"","shortTitle":"FP Yieldmanager","detailUrl":"","chromecolor":"blue"},"state":{"view":"default","defer":false,"collapsed":0},"strs":{},"res":{}},{"data":{"maple":{"platform":{},"module":"u_15191401","instance":"__mmh_1","ba":{"_action":"show","chrome":true,"_container":true,"_id":"u_15191401"},"signature":"N2CrMxctGjr8vsBsM8GtKw--"},"adlocs":"foot9"},"props":{"refHandler":"cfg.maple_dali.handler.refresh","id":"u_15191401","ns":"type_ads","trusted":true,"type":"ads","contentId":"15191401","tags":[],"title":"FP Roundtrip","icon":"","shortTitle":"FP Roundtrip","detailUrl":"","chromecolor":"blue"},"state":{"view":"default","defer":false,"collapsed":0},"strs":{},"res":{}}]}],"res":{"css":{"reset":"http:\/\/l.yimg.com\/a\/lib\/arc\/yui\/reset_2.6.5.css","fonts":"http:\/\/l.yimg.com\/a\/lib\/arc\/yui\/fonts_2.6.4.css","generic_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/generic_0.1.9.css","error_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/error\/error_0.1.16.css","type_fp_css_zindex":"http:\/\/l.yimg.com\/a\/lib\/metro\/fp\/fp_zindex_0.0.29.css","type_fp_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/fp\/fp_0.1.96.css","tablist_service_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/tablist_service_0.1.6.css","iframeshim_service_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/iframeshim_service_0.0.4.css","menu_service_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/menu_service_0.1.3.css","type_masthead_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/masthead\/masthead_0.2.82.css","type_navbar_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/navbar\/navbar_0.1.90.css","type_navbar_css_pageoptions":"http:\/\/l.yimg.com\/a\/lib\/metro\/navbar\/navbar_pageoptions_0.0.29.css","type_breakingnews_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/breakingnews\/breakingnews_0.0.21.css","type_marketindices_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/marketindices\/marketindices_0.1.44.css","type_promoads_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/miniad\/promoads_0.1.7.css","ulm_service_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/ulm_service_0.1.8.css","ulm_default_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/ulm_default_0.1.17.css","carousel_service_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/carousel_service_0.1.9.css","tablist_news_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/tablist_news_0.0.15.css","type_news_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/news\/news_0.1.82.css","type_specialevents_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/specialevents\/specialevents_0.0.34.css","type_ads_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/sda\/sda_0.1.31.css","type_fptoday_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/fptoday\/fptoday_0.1.137.css","carousel_default_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/carousel_default_0.1.13.css","type_tuc_outboxlite_common_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/tuc\/tuc_outboxlite_common_0.0.15.css","type_tuc_outboxlite_embedded_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/tuc\/tuc_outboxlite_embedded_0.0.6.css","type_contentcarousel_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/contentcarousel\/contentcarousel_0.1.89.css","type_contentcarouselTopten_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/contentcarousel\/contentcarousel_topten_0.1.78.css","type_pulse_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/contentcarousel\/pulse_0.1.65.css","type_slideshow1_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/contentcarousel\/slideshow1_0.1.30.css","type_shopping_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/contentcarousel\/shopping_0.1.24.css","type_pa_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/pa\/pa_0.1.186.css","type_pa_detached_chrome_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/pa\/pa_detached_0.1.77.css","tooltip_service_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/tooltip_service_1.0.2.css","tooltip_default_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/tooltip_default_0.1.18.css","tooltip_pa_dialog_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/pa\/tooltip_pa_dialog_1.0.6.css","sortable_service_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/sortable_service_0.1.8.css","sethomepage_service_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/sethomepage_service_0.0.3.css","type_pa_add_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/pa\/pa_add_0.1.50.css","type_footer_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/footer\/footer_0.1.61.css","type_subfooter_css":"http:\/\/l.yimg.com\/a\/lib\/metro\/footer\/subfooter_0.0.8.css"},"js":{"yui":"http:\/\/l.yimg.com\/a\/lib\/arc\/yui\/yui_0.2.4.js","substitute":"http:\/\/l.yimg.com\/a\/lib\/arc\/yui\/substitute_0.1.9.js","oop":"http:\/\/l.yimg.com\/a\/lib\/arc\/yui\/oop_0.1.10.js","event-custom":"http:\/\/l.yimg.com\/a\/lib\/arc\/yui\/event-custom_0.1.5.js","io-base":"http:\/\/l.yimg.com\/a\/lib\/arc\/yui\/io-base_0.1.10.js","dom":"http:\/\/l.yimg.com\/a\/lib\/arc\/yui\/dom_0.1.10.js","event-base":"http:\/\/l.yimg.com\/a\/lib\/arc\/yui\/event-base_0.1.5.js","attribute":"http:\/\/l.yimg.com\/a\/lib\/arc\/yui\/attribute_0.1.11.js","base-base":"http:\/\/l.yimg.com\/a\/lib\/arc\/yui\/base-base_0.1.10.js","pluginhost":"http:\/\/l.yimg.com\/a\/lib\/arc\/yui\/pluginhost_0.1.4.js","node":"http:\/\/l.yimg.com\/a\/lib\/arc\/yui\/node_0.1.25.js","json":"http:\/\/l.yimg.com\/a\/lib\/arc\/yui\/json_0.1.13.js","anim-base":"http:\/\/l.yimg.com\/a\/lib\/arc\/yui\/anim-base_0.1.9.js","anim-easing":"http:\/\/l.yimg.com\/a\/lib\/arc\/yui\/anim-easing_0.1.9.js","anim-node-plugin":"http:\/\/l.yimg.com\/a\/lib\/arc\/yui\/anim-node-plugin_0.1.8.js","cookie":"http:\/\/l.yimg.com\/a\/lib\/arc\/yui\/cookie_0.1.9.js","yui3def":"http:\/\/l.yimg.com\/a\/lib\/arc\/yui\/yuidef_0.1.9.js","module_platform":"http:\/\/l.yimg.com\/a\/lib\/arc\/framework\/module_platform_0.1.53.js","resourcemgr":"http:\/\/l.yimg.com\/a\/lib\/arc\/framework\/resourcemgr_0.1.14.js","transport":"http:\/\/l.yimg.com\/a\/lib\/metro2\/dali\/dali_transport_1.1.28.js","module_api":"http:\/\/l.yimg.com\/a\/lib\/arc\/framework\/module_api_0.1.14.js","metro_ext":"http:\/\/l.yimg.com\/a\/lib\/metro2\/dali\/metro_dali_1.0.19.js","userinfo_service":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/userinfo_service_0.1.7.js","metro_viewtype":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/metro_viewtype_0.1.16.js","default_viewtype":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/default_viewtype_0.1.53.js","edit_viewtype":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/edit_viewtype_0.1.31.js","pa_viewtype":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/pa_viewtype_0.1.5.js","ylc":"http:\/\/l.yimg.com\/a\/lib\/arc\/util\/ylc_1.8.17.js","instrumentation_service":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/instrumentation_service_0.1.12.js","metrologger_service":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/metrologger_service_0.1.10.js","ads_bridge_service":"http:\/\/l.yimg.com\/a\/lib\/metro\/sda\/sda_bridge_service_0.0.5.js","autohide_service":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/autohide_service_0.1.9.js","sethomepage_service":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/sethomepage_service_0.0.22.js","gallery-base64":"http:\/\/l.yimg.com\/a\/lib\/metro\/uicontrib\/gallery-base64_0.1.0.js","gallery-y64":"http:\/\/l.yimg.com\/a\/lib\/metro\/uicontrib\/gallery-y64_0.1.0.js","rdsig_click":"http:\/\/l.yimg.com\/a\/lib\/metro\/uicontrib\/rdsig_click_0.1.4.js","type_fp":"http:\/\/l.yimg.com\/a\/lib\/metro\/fp\/fp_0.1.67.js","metrics_service":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/metrics_service_0.1.5.js","metro_performance":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/metro_performance_0.1.7.js","yui_service":"http:\/\/l.yimg.com\/a\/lib\/arc\/framework\/yui_service_0.1.11.js","aria_service":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/aria_service_0.1.13.js","tablist_service":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/tablist_service_0.1.30.js","iframeshim_service":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/iframeshim_service_0.0.12.js","menu_service":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/menu_service_0.1.9.js","type_masthead":"http:\/\/l.yimg.com\/a\/lib\/metro\/masthead\/masthead_0.2.157.js","statemgr_service":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/statemgr_service_0.1.11.js","type_navbar":"http:\/\/l.yimg.com\/a\/lib\/metro\/navbar\/navbar_0.1.85.js","type_marketindices":"http:\/\/l.yimg.com\/a\/lib\/metro\/marketindices\/marketindices_0.1.21.js","ulm_service":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/ulm_service_0.1.31.js","carousel_service":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/carousel_service_0.1.39.js","type_news":"http:\/\/l.yimg.com\/a\/lib\/metro\/news\/news_0.1.53.js","ads_deferred_service":"http:\/\/l.yimg.com\/a\/lib\/metro\/sda\/sda_deferred_service_0.0.14.js","ads_transport":"http:\/\/l.yimg.com\/a\/lib\/metro\/sda\/sda_transport_0.0.10.js","type_ads":"http:\/\/l.yimg.com\/a\/lib\/metro\/sda\/sda_0.1.36.js","type_fptoday_hover":"http:\/\/l.yimg.com\/a\/lib\/metro\/fptoday\/fptoday_hover_0.1.74.js","type_tuc_outboxlite":"http:\/\/l.yimg.com\/a\/lib\/metro\/tuc\/tuc_outboxlite_0.0.21.js","type_contentcarousel":"http:\/\/l.yimg.com\/a\/lib\/metro\/contentcarousel\/contentcarousel_0.1.39.js","type_contentcarouselslideshow1":"http:\/\/l.yimg.com\/a\/lib\/metro\/contentcarousel\/contentcarouselslideshow1_0.1.13.js","toolbar_bridge_service":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/toolbar_bridge_service_0.1.17.js","tooltip_service":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/tooltip_service_0.1.46.js","sortable_service":"http:\/\/l.yimg.com\/a\/lib\/metro\/uiplugins\/sortable_service_0.1.20.js","type_pa_util":"http:\/\/l.yimg.com\/a\/lib\/metro\/pa\/pautil_0.1.3.js","type_pa_list":"http:\/\/l.yimg.com\/a\/lib\/metro\/pa\/palist_0.1.14.js","type_pa":"http:\/\/l.yimg.com\/a\/lib\/metro\/pa\/pa_0.1.208.js"}}};
+    });
+}()
+);
+</script>
+<!-- bottom -->
+<script type="text/javascript">
+//(function(){
+        YUI.add("metro_config", function(Y){
+            // until dali defaults this
+            
+            Y.mix(Y.dali.config.props, {
+                libRoot: "",
+                comboRoot: "http:\/\/l.yimg.com\/a\/combo?",
+                user : "",
+                ultSpaceId : "2142153755",
+                ultBeaconHost : "\/p.gif",
+                ylp: "",
+                modChromeHtml : "<div id=\"{view_name}-{type_name}\" class=\"mod view_{view_name}\">  <div id=\"{view_name}-{type_name}-bd\" class=\"bd  _{view_name}\">{html}    <\/div>\n    \n<\/div>",
+                modErrorHtml : "<div class=\"oops-msg\" role=\"alertdialog\">\n                <span class='icon' style='background-image:url({img});_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop src=\"{img}\"); _background-image:none;'><\/span><span class='shadow'><\/span>\n                <h3 class=\"oops\">\"{name}\" ha riscontrato un problema durante il caricamento<\/h3>\n                <p class=\"oops\">{message}<\/p>\n                                <p class=\"oops oops-link\">Oppure visita <a href=\"{url}\">{url}<\/a><\/p>\n            <\/div>",
+                crumbErrorHtml : "<div class=\"oops-msg\" role=\"alertdialog\">\n                <span class=\"icon icon-error y-glbl-universal\"><\/span>\n                <h3 class=\"oops\">Il modulo ha riscontrato un problema durante il caricamento<\/h3>\n                <p class=\"oops\">\u00c8 probabile che tu sia entrato o uscito da un'altra finestra. Clicca su OK per ricaricare la pagina.<\/p>\n                \n            <\/div>",
+                cookieErrorHtml : "<div class=\"oops-msg\" role=\"alertdialog\">\n                <span class=\"icon icon-error y-glbl-universal\"><\/span>\n                <h3 class=\"oops\">Il modulo ha riscontrato un problema durante il caricamento<\/h3>\n                <p class=\"oops\">Questa applicazione richiede che i cookie siano attivati. Per l'aiuto sui cookie, visita <a href=\"http:\/\/help.yahoo.com\/\">http:\/\/help.yahoo.com<\/a> e cerca \"Attiva cookie\".<\/p>\n                \n            <\/div>",           
+                cookieDomain :  "it.yahoo.com",
+                proxyTimeout : 15000,
+                errorDetails: 0,
+                sdaRequestUrl: "/sda2",
+                sdaBatchEnabled: 1,
+                "flash.min.versions": "9.0.260,10.0.42",
+                "flash.upgrade.url": "http://get.adobe.com/flashplayer/",
+                "ui.tabchange": "",
+                cscLogEnabled: 0,
+                cscLogCSCHost: "row.bc.yahoo.com",
+                requestId: "xhtUTEmgw0MggwEA-1YtRQ..",
+                cometdUrl: ""
+            });
+            
+            // hack since FP requires a containing FP module
+            Y.dali.config.mods =[{
+                props: {
+                    "trusted": true,
+                    "id": "fp",
+                    "type": "fp",
+                    "ns": "type_fp"
+                },
+                strs: {
+                    // need to translate
+                    "STR.MODULE.ERROR_FALLBACK_TEXT": "Il contenuto non è disponibile al momento. Ci stiamo lavorando. Riprova più avanti."
+                    },
+                state: {
+                    view: "default"
+                },
+                mods : Y.dali.config.mods,
+                data: {
+                    deferredRes: [{"css":{"type_mail_css":"metro\/mail\/mail_0.0.25.css","type_finance_css":"metro\/finance\/finance_0.1.71.css","reset":"arc\/yui\/reset_2.6.5.css","fonts":"arc\/yui\/fonts_2.6.4.css","tablist_service_css":"metro\/uiplugins\/tablist_service_0.1.6.css","type_messenger_css":"metro\/messenger\/messenger_0.0.37.css","tablist_default_css":"metro\/uiplugins\/tablist_default_0.1.7.css","type_weather_css":"metro\/weather\/weather_0.1.75.css","iframeshim_service_css":"metro\/uiplugins\/iframeshim_service_0.0.4.css","ulm_service_css":"metro\/uiplugins\/ulm_service_0.1.8.css","ulm_default_css":"metro\/uiplugins\/ulm_default_0.1.17.css","type_facebook_css":"metro\/facebook\/facebook_0.0.67.css","type_yservices_css":"metro\/yservices\/yservices_0.1.107.css","menu_service_css":"metro\/uiplugins\/menu_service_0.1.3.css","menu_default_css":"metro\/uiplugins\/menu_default_0.1.3.css","type_apppromo_css":"metro\/apppromo\/apppromo_0.0.15.css","type_pacontainer_css":"metro\/pacontainer\/pacontainer_0.0.40.css"},"js":{"type_mail":"metro\/mail\/mail_0.0.11.js","type_finance":"metro\/finance\/finance_0.1.83.js","type_messenger":"metro\/messenger\/messenger_0.0.42.js","type_weather":"metro\/weather\/weather_0.1.80.js","type_facebook":"metro\/facebook\/facebook_0.0.60.js","type_yservices":"metro\/yservices\/yservices_0.1.30.js","type_pacontainer":"metro\/pacontainer\/pacontainer_0.0.45.js"}}],
+                    deferredResDelay: "500",
+                    ilc: ""
+                }
+            }];    
+        });
+    
+    var Y = YUI({ bootstrap: false, useBrowserConsole: false }).use("*");
+    Y.dali.config.debug=false;
+    Y.Get.script(YUI.presentation.lazyScriptList, { onSuccess: function()
+    {
+        Y.use("*");
+        Y.ModulePlatform.init(Y.dali.config, true);
+
+    }});
+
+//})();
+</script>
+<script>
+    rtJSDone = Number(new Date());
+
+    if ( "undefined" != typeof(rt_LogTime) ) { 
+        rt_LogTime("t1", rtJSLoad - rtJSStart, true); 
+        rt_LogTime("t2", rtJSDone - rtJSLoad , true);
+        if ("undefined" != typeof(rtAdStart) && "undefined" != typeof(rtAdDone)) { rt_LogTime("t3", rtAdDone - rtAdStart, true); }
+    } 
+</script></body>
+</html>
+<!-- bid=709 -->
+<!-- sid=2142153755 -->
+
+<!-- myproperty:myservice-it:0:Success -->
+<!-- w68.fp.ac4.yahoo.com uncompressed/chunked Sat Jul 31 05:49:10 PDT 2010 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
